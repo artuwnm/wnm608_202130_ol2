@@ -6,17 +6,13 @@
 }
 
 :root {
-	--color-neutral-light:#CFD1D2;
-	--color-neutral-medium:#8A8C8E;
-	--color-neutral-dark:#57595B;	
+	--color-neutral-light:#eee;
+	--color-neutral-medium:#999;
+	--color-neutral-dark:#555;	
 
-	--color-main-light: #5DC8F2;
-    --color-main-medium: #0B91D0;
-    --color-main-dark: #0E4A7E;
-
-	--color-sub-light: #EE737D;
-    --color-sub-medium: #D02027;
-    --color-sub-dark: #851719;
+	--color-main-light: #ade6e1;
+    --color-main-medium: #00e9ff;
+    --color-main-dark: #038488;
 
 	--color-black:#000;
 	--color-white:#fff;	
@@ -127,7 +123,7 @@ a:hover {
 		text-decoration: none;
 	}
 	.nav .active a {
-		background-color: var(--color-neutral-light);
+		background-color: var(--color-main-light);
 		color: inherit;
 	}
 
@@ -231,7 +227,7 @@ a:hover {
 
 	  	.card.dark {
 	  		background-color: var(--color-neutral-dark);
-	  		color: white;
+	  		color: var(--color-neutral-light);
 	  	}
 	  	.card.medium {
 	  		background-color: var(--color-neutral-medium);
