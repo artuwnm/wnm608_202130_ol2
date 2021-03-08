@@ -8,13 +8,18 @@
  --color-neutral-light: #eee;
  --color-neutral-medium: #999;
  --color-neutral-dark: #DAADD2;
+
+  --color-main-light: #DAADD2;
+  --color-main-medium: #DAADD2;
+  --color-main-dark: #DAADD2;
+
  --color-black: #000;
  --color-white: #fff;
 
- --header-height: 3rem;
+ --header-height: 4rem;
  --spacing: 1rem;
 
- --font-serif: Georgia, "Times New Roman", serif;
+ --font-serif: “Minion Variable Concept”, Georgia, "Times New Roman", serif;
  --font-sans: Helvetica, Arial, sans-serif;
 }
 
@@ -28,7 +33,7 @@
 body {
  margin: 0;
  font-size: 100%;
- font-family: var(--font-sans);
+ font-family: “Minion Variable Concept”，Georgia, "Times New Roman", serif;
 }
 
 h1,
@@ -91,6 +96,55 @@ a:hover {
  padding-left: 0;
 }
 
+.nav a {
+	display: block;
+	padding: 0.2em 0.5em;
+}
+
+
+.nav .active a {
+	background-color: var(--color-main-medium);
+	color: inherit;
+	
+}
+
+.nav a:hover {
+	background-color: var(--color-main-light);
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul{
+	display: flex;
+}
+
+.nav-stretch li{
+	flex:1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a {
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+.nav-crumbs a {
+	display:inline-block;
+}
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+}
+.nav-crumbs a :hover{
+	background-color: transparent;
+	color:inherit;
+	text-decoration: underline;
+}
+
+
+
 .navbar {
  background-color: var(--color-neutral-dark);
  color: var(--color-white);
@@ -98,9 +152,9 @@ a:hover {
 }
 
 .navbar h1{
- font-size: 1em;
+ font-size: 2.2em;
  margin: 0;
- font-family: var(--font-sans);
+ font-family: “Minion Variable Concept”, Georgia, "Times New Roman", serif;
 }
 .navbar a {
  padding: 0 1em;
@@ -145,10 +199,42 @@ a:hover {
 
 
 .view-window {
- height: 50vh;
+ height: 60vh;
  position: relative;
  overflow: hidden;
  background-size: cover;
  background-position: center;
  background-attachment: fixed;
+}
+
+
+
+
+
+/*TABLES*/
+.table{
+	width:100%
+	border-collapse:collapse;
+}
+
+.table th,
+.table td{
+	text-align: left;
+}
+
+
+
+/*Figure*/
+.figure {
+	margin:0;
+	background-color: var(--color-white);
+}
+
+.figure img{
+	width:100%;
+	vertical-align: text-bottom;
+}
+
+.figure figcaption {
+	padding:1em;
 }
