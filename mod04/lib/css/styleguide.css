@@ -1,0 +1,273 @@
+/* CSS RESET*/
+
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neutral-light:#CECECE;
+	--color-neutral-medium:#747171;
+	--color-neutral-dark:#282828;
+
+    --color-main-light: lightblue;
+    --color-main-medium: blue;
+    --color-main-dark: darkblue
+
+	--color-black:#282828;
+	--color-white:#fff;
+
+	--header-height:3rem;
+	--spacing: 1rem;
+
+}
+body {
+	margin:0;
+	font-size:100%;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5, 
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a{
+	color:inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+ /* LAYOUT CLASSES */
+
+.container {
+	max-width:800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.display-flex {display:flex; }
+.display-inline-flex {display:inline-flex; }
+.display-block {display:block; }
+.display-inline-block {display:inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+  /* Component Classes */
+
+.nav ul{
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+	.nav a {
+		display: block;
+		padding: 0.3em 0.6em;
+	}
+
+	.nav a:hover {
+		background-color:var(--color-main-medium);
+		color:var(-- color-white);
+		text-decoration: none;
+	}
+
+	.nav-pills ul,
+	.nav-stretch ul,
+	.nav-flex ul {
+		display: flex;
+	}
+
+	.nav-stretch li {
+		flex:1 1 auto;
+		text-align: center;
+	}
+
+	.nav-pills a {
+		border-radius: 2em;
+		padding: 0.5em 1em;
+	}
+
+
+.navbar {
+	background-color:var(--color-main-dark);
+	color:var(--color-white);
+	line-height:var(--header-height);
+}
+
+.navbar h1 {
+	font-size: 1.5em;
+	margin: 0;
+	font-family:var(--font-sans);
+}
+
+.navbar a{
+	padding: 0 0.5em;
+}
+
+
+/* CARD */
+
+.card{
+	background-color:var(--color-white);
+	margin: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.card.soft {
+border-radius: 1em;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+margin-top: 1em;
+margin-bottom: 1em;
+padding: 1em;
+}
+
+.card.hard {
+border-radius: 1em;
+border: 2px solid var(--color-neutral-medium);
+margin-top: 1em;
+margin-bottom: 1em;
+padding: 1em;
+}
+
+.card.dark{
+	background-color: var(--color-neutral-dark);
+	border-radius: 1em;
+	color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.card.medium{
+	background-color: var(--color-neutral-medium);
+	border-radius: 1em;
+	color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.card.light{
+	background-color: var(--color-neutral-light);
+	border-radius: 1em;
+	color: var(--color-neutral-dark);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.card.maindark{
+	background-color: var(--color-main-dark);
+	border-radius: 1em;
+	color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.card.mainmedium{
+	background-color: var(--color-main-medium);
+	border-radius: 1em;
+	color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.card.mainlight{
+	background-color: var(--color-main-light);
+	border-radius: 1em;
+	color: var(--color-neutral-dark);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.cart.flat {
+	padding:0;
+}
+
+
+/* view window */
+.view-window {
+	height: 50vh;
+	position: relative;
+	overflow: hidden;
+	background size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.table {
+
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	padding: 0.3em 0.6em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color: var(--color-neutral-light);
+}
+
+.table.lined.all td:not(:first-child),
+.table.lined.all th:not(:first-child),
+.table.lined.vertical td:not(:first-child),
+.table.lined.vertical th:not(:first-child){
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr,
+.table.lined.all tbody tr{
+	border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid var(--color-neutral-medium);
+}
+
+/* Figure */
+
+.figure {
+	margin: 0;
+	background-color: var(--color-neutral-white);
+}
+
+.figure img {
+	width: 100%;
+	vertical-align: text-bottom;
+}
+
+.figure figcaption {
+	padding: 1em;
+}
+
+
+
