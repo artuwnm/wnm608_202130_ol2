@@ -6,6 +6,7 @@
 
 body {
 	background-color: var(--color-offwhite);
+	padding-bottom: 4em;
 }
 
 h4 {
@@ -74,3 +75,17 @@ p {
   text-align: center;
   font-size: 5px,
 }
+
+.favorite label {
+	transition: all 0.3s;
+	display: inline-block;
+	transform: scale(3,3);
+	color: var(--color-neutral-light)
+}
+.favorite input:checked + label {
+	color: var(--color-sub-medium);
+	transform: scale(4,4);
+}
+
+
+
