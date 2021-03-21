@@ -14,7 +14,7 @@
     --color-main-medium: #4191CF;
     --color-main-dark: #054B73;
 
-	--color-sub-light: #F37777;
+    --color-sub-light: #F37777;
     --color-sub-medium: #ED2725;
     --color-sub-dark: #BF2026;
 
@@ -195,7 +195,7 @@ a:hover {
 
 
 .navbar {
-	background-color: var(--color-main-medium);
+	background-color: #4191CF;
 	color: var(--color-white);
 	line-height: var(--header-height);
 }
@@ -242,6 +242,7 @@ a:hover {
 	  	.card.medium {
 	  		border-radius: 0.5em;
 	  		background-color: var(--color-neutral-medium);
+	  		color: white;
 	  	}
 
 	  	.card.flat {
@@ -256,10 +257,25 @@ a:hover {
 	  	.card.main.medium {
 	  		border-radius: 0.5em;
 	  		background-color: var(--color-main-medium);
+	  		color: white;
 	  	}
 	  	.card.main.dark {
 	  		border-radius: 0.5em;
 	  		background-color: var(--color-main-dark);
+	  	}
+	  	.card.sub.light {
+	  		border-radius: 0.5em;
+	  		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	  		background-color: var(--color-sub-light);
+	  	}
+	  	.card.sub.medium {
+	  		border-radius: 0.5em;
+	  		background-color: var(--color-sub-medium);
+	  		color: white;
+	  	}
+	  	.card.sub.dark {
+	  		border-radius: 0.5em;
+	  		background-color: var(--color-sub-dark);
 	  	}
 
 

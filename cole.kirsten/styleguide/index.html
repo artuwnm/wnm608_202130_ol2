@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
 	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/bvi6dqx.css">
 
@@ -38,10 +39,8 @@
 			<nav class="nav">
 				<ul>
 					<li><a href="#typography">Typography</a></li>
-					<ul>
-						<li><a href="#headings">Headings</a></li>
-						<li><a href="#paragraphs">Paragraphs</a></li>
-					</ul>
+					<li><a href="#headings">Headings</a></li>
+					<li><a href="#paragraphs">Paragraphs</a></li>
 					<li><a href="#cards">Cards</a></li>
 					<li><a href="#viewwindows">View Window</a></li>
 					<li><a href="#navigations">Navigations</a></li>
@@ -50,13 +49,11 @@
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#figures">Figures</a></li>
 					<li><a href="#forms">Forms</a></li>
-					<ul>
-						<li><a href="#inputs">Inputs</a></li>
-						<li><a href="#labels">Labels</a></li>
-						<li><a href="#controls">Controls</a></li>
-						<li><a href="#buttons">Buttons</a></li>
-						<li><a href="#hotdog">Hotdog</a></li>
-					</ul>
+					<li><a href="#inputs">Inputs</a></li>
+					<li><a href="#labels">Labels</a></li>
+					<li><a href="#controls">Controls</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#hotdog">Hotdog</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -117,6 +114,15 @@
 				<div class="col-xs-12 col-md-4">
 					<div class="card main dark">Card Main Dark</div>
 				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card sub light">Card Sub Light</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card sub medium">Card Sub Medium</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card sub dark">Card Sub Dark</div>
+				</div>
 			</div>
 	</div>
 
@@ -169,14 +175,52 @@
 
 
 
-
 	<div class="container">
-		<h2>Grid System</h2>
+	<h2>Grid System</h2>
+		<div class="card soft">
+			<div class="grid">
+					<div class="col-xs-12 col-md-6">column 6</div>
+					<div class="col-xs-12 col-md-6">column 6</div>
+				</div>
+				<div class="grid">
+					<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+					<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+					<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+					<div class="col-xs-3">column 3</div>
+					<div class="col-xs-3">column 3</div>
+					<div class="col-xs-3">column 3</div>				
+					<div class="col-xs-3">column 3</div>
+				</div>
+				<div class="grid ten">
+					<div class="col-xs-2">column 2</div>
+					<div class="col-xs-2">column 2</div>
+					<div class="col-xs-2">column 2</div>
+					<div class="col-xs-2">column 2</div>
+					<div class="col-xs-2">column 2</div>
+				</div>
+		</div>
 	</div>
 
 
 	<div class="container">
 		<h2>Flex System</h2>
+		<div class="card soft">
+			<ul class="container display-flex">
+				<li class="flex-stretch">Flex Stretch 1</li>
+				<li class="flex-stretch">Flex Stretch 2</li>
+				<li class="flex-stretch">Flex Stretch 3</li>
+				<li class="flex-stretch">Flex Stretch 4</li>
+			</ul>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<p>Flex Align Center with Flex Stretch</p>
+				</div>
+				<div class="flex-none">
+					<p>And Flex None</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script>
