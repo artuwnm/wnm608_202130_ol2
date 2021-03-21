@@ -179,15 +179,17 @@ a:hover {
 
 
 .navbar {
-	background-color: #F8D0C6;
+	background-color: #E5C4C3;
 	color: var(--color-white);
 	line-height: var(--header-height);
+
 }
 
 .navbar h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 0;
 	font-family: 'Cinzel Decorative', cursive;
+	color: #D94862
 
 }
 
