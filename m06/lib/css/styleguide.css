@@ -131,14 +131,17 @@ a:hover{
 }
 
 .navbar h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 0;
-	font-family:var(--font-sans);
+	font-family: var(--font-sans-serif);
 }
 
 .navbar a{
 	padding: 0 0.5em;
 }
+
+
+
 
 
 
@@ -396,7 +399,7 @@ width: 100%;
 .hotdog {
 	background-color: var(--color-neutral-light);
 	border-radius: 2em;
-	padding: 0.5em 1.5em;
+	padding: 0.3em 1.0em;
 	display: flex;
 }
 
@@ -462,4 +465,5 @@ content: '';
 .toggle input:checked + label::after{
 	transform: translateX(1em);
 }
+
 

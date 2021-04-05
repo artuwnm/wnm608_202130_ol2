@@ -46,6 +46,10 @@ body {
 	}
 }
 
+.footer {
+	line-height: 2em;
+}
+
 	.navbar .nav li {
 		line-height: 2em;
 	}
