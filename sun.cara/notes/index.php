@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	
-	<title>Cara's Website</title>
+	<meta charset="utf-8">
+	<title>Product Item</title>
 
-	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<?php include "parts/meta.php"; ?>
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
-	
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-none">
-		<h1>Bentley & Skinner jewellery</h1>
-	</div>
-	<div class="flex-stretch"></div>
-		
-		<nav class="flex-none nav">
-		<ul class="container display-flex">
-			<li><a href="#article1">Our Story</a></li>
-			<li><a href="#article2">Product</a></li>
-			<li><a href="#article3">On Sale</a></li>
-			<li><a href="#article4">Newsletter</a></li>
-		</ul>
-	</nav>
-	</header>
+
+	<?php include "parts/navbar.php"; ?>
 	
 	<div class="container">
 		<article id="article1" class="article card soft">
