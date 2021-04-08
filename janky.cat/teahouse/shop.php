@@ -42,15 +42,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div class="display-flex">
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite flex-align-center flex-justify-center">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 
 						</figcaption>		
@@ -69,14 +71,71 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
+						</div>
+						</figcaption>		
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product">
+						<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
+						<figcaption>
+							<div class="display-flex">
+							<div class="productname">Product Name</div>
+							</div>
+
+						<div class="price">$3.99</div>
+
+						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
+
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
+							</div>
+
+						</div>
+						</figcaption>		
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure product">
+						<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
+						<figcaption>
+							<div class="display-flex">
+							<div class="productname">Product Name</div>
+							</div>
+
+						<div class="price">$3.99</div>
+
+						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
+
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 						</div>
 						</figcaption>		
@@ -95,15 +154,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -121,15 +182,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -147,15 +210,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -173,15 +238,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -199,15 +266,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -225,15 +294,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -251,15 +322,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
@@ -277,67 +350,17 @@
 
 						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
 
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
+						<div class="flex-grow">
+							<div class="form-control display-flex">
+								<button type="button"class="small-form-button">Add to Cart</button>
+
+								<div class="favorite display-flex">
+									<input type="checkbox" id="heart-example" class="hidden">
+								<label for="heart-example">&hearts;</label>
+
+								</div>
 							</div>
 
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
-						</div>
-						</figcaption>		
-					</figure>
-				</div>
-
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-						<figcaption>
-							<div class="display-flex">
-							<div class="productname">Product Name</div>
-							</div>
-
-						<div class="price">$3.99</div>
-
-						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
-
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
-							</div>
-
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
-						</div>
-						</figcaption>		
-					</figure>
-				</div>
-
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-						<figcaption>
-							<div class="display-flex">
-							<div class="productname">Product Name</div>
-							</div>
-
-						<div class="price">$3.99</div>
-
-						<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
-
-						<div>
-							<div class="form-control">
-							<button type="button"class="small-form-button">Add to Cart</button>
-							</div>
-
-							<div class="favorite">
-								<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">&hearts;</label>
-							</div>
 						</div>
 						</figcaption>		
 					</figure>
