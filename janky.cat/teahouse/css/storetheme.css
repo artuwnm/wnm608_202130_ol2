@@ -5,8 +5,7 @@
 }
 
 body {
-	background-color:var(--color-offwhite);
-	padding-bottom:10em;
+	background-color:var(--color-white);
 }
 
 @media (max-width: 400px) {
@@ -26,6 +25,11 @@ body {
 	.navbar .nav li {
 		line-height: 2em;
 	}
+}
+
+.cart img {
+	height: 1.5em;
+	color: white;
 }
 
 .figure.product{
@@ -97,7 +101,7 @@ body {
 }
 
 
-/* TYPE */
+/* TYPOGRAPHY */
 
 .logo {
 	font-family: henriette, sans-serif;

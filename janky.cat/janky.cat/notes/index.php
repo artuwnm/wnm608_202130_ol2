@@ -118,7 +118,7 @@
 	<hr>
 	<?php
 
-	// Casting - take a vlue of oen type and convert it into a different type. 
+	// Casting - take a vlue of one type and convert it into a different type. 
 	$c = "$a";
 	$d = $c*1;
 
