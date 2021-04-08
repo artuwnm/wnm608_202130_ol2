@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Learn | Tea House</title>
+	<title>Cart | Tea House</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 <body>
 	<?php include "parts/navbar.php"; ?>
 
-<br>
+	<div class="card soft">
+		
+	
+	<div class="form-control">
+			<a href="confirmation.php"><button type="button"class="large-form-button">Place Order</button></a>
+	</div>
 
-	<div class="card soft"></div>
+	</div>
+
+<br>
 
 	<div>
 	<?php include "parts/newsletter.php"; ?>

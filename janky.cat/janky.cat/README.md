@@ -1,9 +1,17 @@
 # Cat Janky
 
 ## Relevant Links
-http://catjankydesign.com/wnm608/janky.cat/index.html
 
-http://catjankydesign.com/wnm608/janky.cat/styleguide
+## Semester Work
+http://catjankydesign.com/wnm608/janky.cat/janky.cat/index.html
+
+http://catjankydesign.com/wnm608/janky.cat/janky.cat/styleguide
+
 
 ## Tea House
-http://catjankydesign.com/teahouse/styleguide
+
+Homepage:
+http://www.catjankydesign.com/wnm608/janky.cat/teahouse/index.php
+
+Styleguide:
+http://catjankydesign.com/wnm608/janky.cat/janky.com/teahouse/styleguide

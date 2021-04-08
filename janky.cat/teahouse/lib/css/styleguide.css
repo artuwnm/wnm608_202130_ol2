@@ -22,7 +22,7 @@
 
 	--color-black: #14080E;
 	--color-grey-medium: #838586;
-	--color-grey-light: #bababa;
+	--color-grey-light: #F5F5F5;
 	--color-white: #fff;
 
 	--header-height:3rem;
@@ -69,7 +69,7 @@ a:hover {
 /* LAYOUT CLASSES */
 
 .container {
-	max-width: 800px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -148,9 +148,9 @@ a:hover {
 	}
 
 	.nav h1 {
+		align-items: center;
 		margin: 0em;
 		margin-block-start: 0em;
-		margin-block-end: 0em;
 	}
 
 .nav-tableofcontents ul {
@@ -183,6 +183,8 @@ a:hover {
 	.card.medium {
 		background-color: var(--color-main-medium);
 		color: var(--color-white);
+		margin: 0em;
+		padding: 2em;
 	}
 	.card.light {
 		background-color:var(--color-neutral-light);
@@ -192,9 +194,10 @@ a:hover {
 	}
 	.card.flat{
 		padding: 0;
+		margin: 0;
+		border-top: 1px solid var(--color-black);
+		border-bottom: 1px solid var(--color-black);
 	}
-
-
 
 /* Small Classes */
 
@@ -235,6 +238,16 @@ a:hover {
 
 /* FIGURES */
 
+.view-window {
+	height:50vh;
+	position:relative;
+	overflow: hidden;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
 .figure {
 	margin:0;
 	background-color:var(--color-white)
@@ -243,6 +256,7 @@ a:hover {
 .figure img {
 	width: 100%;
 	vertical-align: text-bottom;
+	position: relative;
 }
 
 .figure figcaption {
@@ -299,7 +313,7 @@ a:hover {
 
 .small-form-button {
 	background-color: var(--color-white);
-	border: .1em solid var(--color-grey-light); 
+	border: .1em solid var(--color-black); 
 	cursor:pointer;
 	text-align: center;
 	font: inherit;
@@ -320,6 +334,31 @@ a:hover {
 	color: var(--color-white);
 }
 
+/* SMALL ROUND BUTTON */
+
+.small-form-button-round {
+	background-color: var(--color-white);
+	border-radius: 5em;
+	border: .1em solid var(--color-grey-light); 
+	cursor:pointer;
+	text-align: center;
+	font: inherit;
+	font-size: .8em;
+	display: inline-block;
+	margin: auto;
+	padding: .2em 1em;
+}
+
+.small-form-button-round:hover {
+	text-decoration: none;
+	background-color: var(--color-neutral-light);
+}
+
+.small-form-button-round:active {
+	text-decoration: none;
+	background-color: var(--color-neutral-medium);
+	color: var(--color-white);
+}
 
 
 /* MEDIUM BUTTON */
