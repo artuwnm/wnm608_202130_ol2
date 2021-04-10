@@ -1,0 +1,14 @@
+
+
+{
+	"notes":[
+
+		"JSON terminology brackets are [], braces are{}, parenthesese are() and carrots are <>",
+		"JSON files always start with an array [] or an object {}",
+		"JSON files cannot have comments, so put comments in this array",
+		"commas go between items in an array or object, but there should never be a trailing comma",
+		"All property names must be in quotation marks",
+		"All string quotation marks must be double quotes",
+		"Use a linter like jsonlint.com to check json"
+	]
+}

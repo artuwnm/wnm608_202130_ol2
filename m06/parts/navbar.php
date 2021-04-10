@@ -3,7 +3,9 @@
 		<div class="flex-none">
 			<h1>The Black Closet</h1>
 		</div>
-		<div class="flex-stretch"></div>
+		<div class="flex-stretch">
+		</div>
+			
 		<nav class="nav nav-flex flex-none ">
 			<ul>
 				<!--li*3>a[href=#]{link$}-->
@@ -12,11 +14,12 @@
 					<li><a href="shopping_bag.php">Shopping Bag</a></li>
 					<li><a href="product_list.php">Admin</a></li>
 			</ul>
-	<div class="form-control">
+
+		<div class="form-control">
 		<form >
 			<input type="search" class="hotdog" placeholder="Search">
 		</form>
-	</div>
 		</nav>
 	</div>
+</div>
 </header>

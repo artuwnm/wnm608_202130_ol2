@@ -6,6 +6,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
 
+<base href="http://agnesbradford.com/aau/wmn608/m06/styleguide/">
+
 <link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 <link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
 <link rel="stylesheet" type="text/css" href="../css/storetheme.css">
