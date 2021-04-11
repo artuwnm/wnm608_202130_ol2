@@ -389,6 +389,10 @@ a:hover {
 
 
  }
+
+input, textarea {
+	color:#9999;
+}
  
 
 /*Toggle*/
