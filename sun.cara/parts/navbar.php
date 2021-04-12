@@ -11,6 +11,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="product_list.php">Product</a></li>
 					<li><a href="product_onsale.php">On Sale</a></li>
+					<li><a href="product_cart.php">Cart</a></li>
 					
 				</ul>
 			</nav>
