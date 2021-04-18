@@ -1,4 +1,5 @@
-[
+{
+	"users":[
 	{
 		"name": "Cat Janky",
 		"type":"Teacher",
@@ -16,5 +17,6 @@
 		"type":"Teacher",
 		"eamil": "catjanky@gmail.com",
 		"classes":[608,617,820]
-	},
+	}
 ]
+}
