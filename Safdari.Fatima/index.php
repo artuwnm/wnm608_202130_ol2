@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
 	<title>Home</title>
+
 	<?php include "parts/meta.php"; ?>
-     
+  </head>   
 
-</head>
 <body>
-	<?php include "parts/navbar.php"; ?>
-
+    <?php include "parts/navbar.php"; ?>
 
 
 <div class="view-window" style="background-image:url('img/13.jpg')"></div>
 	<div class="container">
 		<div class="card soft">
-			
-     	
-
      		<h3>Our Sweet Offers</h3>
      		<p>At Sweet Offer we want to share with you our passion for Iranian pastries, the art of incomparable quality and taste.</p>
      		<p>Our mission is to find and provide to you Iran's finest and most extraordinary handmade art and to offer pastries that are made in small batches with the highest quality ingredients using recipes that are rooted in our family history</p>
@@ -29,43 +27,57 @@
 
 
 <div class="container" id="tableofcontents">
-     		<h2>Gift Idea</h2>
-     	
-
-
+    <h4><span>You Might Also Like</span></h4>
      		<div class="grid gap">
      			<div class="col-xs-12 col-md-4">
      				<figure class="figure">
-     			<img src='img/4.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=1">Gift 1</a></li>
+     			<img src='img/Kumach.jpg' alt="">
+     			<figcaption><li><a href="product_item.php?id=1">Kumach</a>
+                      <div>$12.99</div></li>
      			</figcaption>
      		</figure>
      			</div>
      			<div class="col-xs-12 col-md-4">
      				<figure class="figure">
-     			<img src='img/5.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=2">Gift 2</a></li></figcaption>
+     			<img src='img/Walnuts cookies.jpg' alt="">
+     			<figcaption><li><a href="product_item.php?id=2">Walnuts Cookies</a>
+                      <div>$10.00</div></li></figcaption>
      		</figure>
      			</div>
      			<div class="col-xs-12 col-md-4">
      				<figure class="figure">
-     			<img src='img/11.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=3">Gift 3</a></li></figcaption>
+     			<img src='img/pistachio cake.jpg' alt="">
+     			<figcaption><li><a href="product_item.php?id=3">Pistachio Cake</a></li>
+                    <div>$14.99</div></figcaption>
      		</figure>
-     		</div>
      	</div>
-     	</div>
+    	</div>
+
+</div>
 
 
-<div class="container">
-     
-     	    
-     		<div class="card soft" id="headings">Subscribe
-     		
-     	</div>
-     </div>
+<div class="container">        	
+        <h3>Subscribe to our Sweet Newsletter!</h3> 
+          <div class="grid gap">
+               <div class="col-xs-12 col-md-6">
+                    <div class="card soft">
+                         <input type="Text" class="form-input" name="user-classes" id="user" placeholder="Enter Email Address" value="">
+                    </div>
+               </div>
+               <div class="col-xs-12 col-md-6">
+                    <div class="card hard">
+                         <input class="form-button" type="submit" value="Subscribe">
+                    </div>
+                </div>
+          <div>
+</div>
+</div>
+</div>
 
 
-	
+
+<!--<?php include "parts/footer.php"; ?>-->
+                        
 </body>
+
 </html>

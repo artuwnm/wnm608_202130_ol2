@@ -1,4 +1,6 @@
-
+html{
+	height: 100%;
+}
 :root {
 	--color-offwhite: #f4f4f4;
 
