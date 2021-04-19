@@ -28,11 +28,11 @@
 
 
 
-		<div class="container" id="viewwindow">
-		<div class="view-window" style="background-image: url(images/AdobeStock_235929944.jpeg); ">
+	
+		<div class="view-window" style="background-image: url(images/AdobeStock_97070867_small.jpg); "></div>
 
-		</div>
-		</div>
+<?php include "parts/product_overlay_grid.php"; ?>
+
 
 
 
