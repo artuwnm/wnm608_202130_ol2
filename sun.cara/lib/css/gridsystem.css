@@ -1,29 +1,27 @@
+/* LAYOUT GRID SYSTEM */
+
 .grid {
- display: grid;
- grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    --grid-gap: 1em;
+    grid-template-columns: repeat(12,1fr);
 }
+    .grid-10 {
+        grid-template-columns: repeat(10,1fr);
+    }
 
-.grid.ten {
- grid-template-columns: repeat(10, 1fr);
-}
-
-.ten {
- grid-template-columns: repeat(10, 1fr);
-}
 
 .grid.gap {
- --grid-gap: 1em;
- grid-gap: var(--grid-gap);
- gap: var(--grid-gap);
+    grid-gap: var(--grid-gap);
+    gap: var(--grid-gap);
 }
-
-.gap {
- --grid-gap: 1em;
- grid-gap: var(--grid-gap);
- gap: var(--grid-gap);
-}
+    .gap.large { --grid-gap: 2em; }
+    .gap.medium { --grid-gap: 1em; }
+    .gap.small { --grid-gap: 0.5em; }
 
 
+
+
+.col-0 { display: none; }
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
 .col-3 { grid-column: span 3; }
@@ -37,14 +35,14 @@
 .col-11 { grid-column: span 11; }
 .col-12 { grid-column: span 12; }
 
-/* Extra Small */
-@media (min-width:0){
- .gap .xs-large{ --grid-gap: 2em; }
-    .gap .xs-medium{ --grid-gap: 1em; }
-    .gap .xs-small{ --grid-gap: 0.5em; }
 
-    .col-xs-0 { display: none;}
- .col-xs-1 { grid-column: span 1; }
+@media (min-width:0) {
+    .gap.xs-large { --grid-gap: 2em; }
+    .gap.xs-medium { --grid-gap: 1em; }
+    .gap.xs-small { --grid-gap: 0.5em; }
+
+    .col-xs-0 { display: none; }
+    .col-xs-1 { grid-column: span 1; }
     .col-xs-2 { grid-column: span 2; }
     .col-xs-3 { grid-column: span 3; }
     .col-xs-4 { grid-column: span 4; }
@@ -56,17 +54,15 @@
     .col-xs-10 { grid-column: span 10; }
     .col-xs-11 { grid-column: span 11; }
     .col-xs-12 { grid-column: span 12; }
-
 }
 
-/* Small */
-@media (min-width:380px){
- .gap .sm-large{ --grid-gap: 2em; }
-    .gap .sm-medium{ --grid-gap: 1em; }
-    .gap .sm-small{ --grid-gap: 0.5em; }
+@media (min-width:320px) {
+    .gap.sm-large { --grid-gap: 2em; }
+    .gap.sm-medium { --grid-gap: 1em; }
+    .gap.sm-small { --grid-gap: 0.5em; }
 
-    .col-sm-0 { display: none;}
- .col-sm-1 { grid-column: span 1; }
+    .col-sm-0 { display: none; }
+    .col-sm-1 { grid-column: span 1; }
     .col-sm-2 { grid-column: span 2; }
     .col-sm-3 { grid-column: span 3; }
     .col-sm-4 { grid-column: span 4; }
@@ -78,17 +74,15 @@
     .col-sm-10 { grid-column: span 10; }
     .col-sm-11 { grid-column: span 11; }
     .col-sm-12 { grid-column: span 12; }
-
 }
 
-/* Medium */
-@media (min-width:550px){
- .gap .md-large{ --grid-gap: 2em; }
-    .gap .md-medium{ --grid-gap: 1em; }
-    .gap .md-small{ --grid-gap: 0.5em; }
+@media (min-width:600px) {
+    .gap.md-large { --grid-gap: 2em; }
+    .gap.md-medium { --grid-gap: 1em; }
+    .gap.md-small { --grid-gap: 0.5em; }
 
-    .col-md-0 { display: none;}
- .col-md-1 { grid-column: span 1; }
+    .col-md-0 { display: none; }
+    .col-md-1 { grid-column: span 1; }
     .col-md-2 { grid-column: span 2; }
     .col-md-3 { grid-column: span 3; }
     .col-md-4 { grid-column: span 4; }
@@ -100,17 +94,15 @@
     .col-md-10 { grid-column: span 10; }
     .col-md-11 { grid-column: span 11; }
     .col-md-12 { grid-column: span 12; }
-
 }
 
-/* Large */
-@media (min-width:900px){
- .gap .lg-large{ --grid-gap: 2em; }
-    .gap .lg-medium{ --grid-gap: 1em; }
-    .gap .lg-small{ --grid-gap: 0.5em; }
+@media (min-width:900px) {
+    .gap.lg-large { --grid-gap: 2em; }
+    .gap.lg-medium { --grid-gap: 1em; }
+    .gap.lg-small { --grid-gap: 0.5em; }
 
-    .col-lg-0 { display: none;}
- .col-lg-1 { grid-column: span 1; }
+    .col-lg-0 { display: none; }
+    .col-lg-1 { grid-column: span 1; }
     .col-lg-2 { grid-column: span 2; }
     .col-lg-3 { grid-column: span 3; }
     .col-lg-4 { grid-column: span 4; }
@@ -122,17 +114,15 @@
     .col-lg-10 { grid-column: span 10; }
     .col-lg-11 { grid-column: span 11; }
     .col-lg-12 { grid-column: span 12; }
-
 }
 
-/* Extra Large */
-@media (min-width:1200px){
- .gap .xl-large{ --grid-gap: 2em; }
-    .gap .xl-medium{ --grid-gap: 1em; }
-    .gap .xl-small{ --grid-gap: 0.5em; }
+@media (min-width:1200px) {
+    .gap.xl-large { --grid-gap: 2em; }
+    .gap.xl-medium { --grid-gap: 1em; }
+    .gap.xl-small { --grid-gap: 0.5em; }
 
-    .col-xl-0 { display: none;}
- .col-xl-1 { grid-column: span 1; }
+    .col-xl-0 { display: none; }
+    .col-xl-1 { grid-column: span 1; }
     .col-xl-2 { grid-column: span 2; }
     .col-xl-3 { grid-column: span 3; }
     .col-xl-4 { grid-column: span 4; }
@@ -144,5 +134,4 @@
     .col-xl-10 { grid-column: span 10; }
     .col-xl-11 { grid-column: span 11; }
     .col-xl-12 { grid-column: span 12; }
-
 }
