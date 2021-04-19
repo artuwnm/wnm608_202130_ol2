@@ -1,10 +1,6 @@
 /* CSS RESET*/
 
 
-*, *::after, *::before {
-	box-sizing: border-box;
-}
-
 :root {
 	--color-neutral-light:#CECECE;
 	--color-neutral-medium:#747171;
@@ -17,10 +13,18 @@
 	--color-black:#282828;
 	--color-white:#fff;
 
-	--header-height:3rem;
-	--spacing: 1rem;
+	--header-height:3em;
+	--spacing: 1em;
 
 }
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+
+
 body {
 	margin:0;
 	font-size:100%;
@@ -50,10 +54,18 @@ a:hover{
  /* LAYOUT CLASSES */
 
 .container {
-	max-width:900px;
+	max-width:1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+
+
+
+
+/* STANDARD CLASSES */
+
+
 
 
 .display-flex {display:flex; }
@@ -79,6 +91,9 @@ a:hover{
 
 .hidden { display: none; }
 
+
+
+
 /* Component Classes */
 
 .nav ul{
@@ -88,12 +103,12 @@ a:hover{
 	padding-left: 0;
 }
 
-	.nav a {
+.nav a {
 		display: block;
 		padding: 0.3em 0.6em;
 	}
 
-	.nav a:hover {
+.nav a:hover {
 		background-color:var(--color-main-medium);
 		color:var(-- color-white);
 		text-decoration: none;
@@ -141,30 +156,39 @@ a:hover{
 }
 
 
-
-
-
-
 /* view window */
+
+
 .view-window {
-	background-color:var(--color-main-light);
-	height: 50vh;
-	position: relative;
-	background size: cover;
+	background-size: cover;
 	background-position: center;
-	background-attachment: relative;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	
 
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+	
 
-.window-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:var(--color-neutral-medium);
+
+
+
+
+figure {
+	margin: 0;
 }
+	figcaption {
+		padding: 1em;
+		text-align: center;
+	}
+
+
+
+
 
 
 

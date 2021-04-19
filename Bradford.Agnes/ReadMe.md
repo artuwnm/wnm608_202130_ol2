@@ -14,3 +14,10 @@ http://agnesbradford.com/aau/wmn608/m06/styleguide/index.php
 http://agnesbradford.com/aau/wmn608/m06/notes/reading_data.php
 
 http://agnesbradford.com/aau/wmn608/m06/admin/users.php
+
+http://agnesbradford.com/aau/wmn608/m06/admin/forminput.php?id=new
+
+http://agnesbradford.com/aau/wmn608/m06/data/products.sql
+
+
+

@@ -30,7 +30,7 @@ body {
 
 
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
