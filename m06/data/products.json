@@ -1,22 +1,22 @@
 {
 	"products":[
 	{
-		"product_name":"Macbook Pro",
-		"product_description":"This is a laptop computer with a lot of power",
-		"technical_specs":["mem 16gb","storage 500gb"],
-		"price":1399
+		"product_name":"Sport Wedge Heel",
+		"product_description":"Lightweight and comfortable. Casual everyday shoe. A mixed fabric upper, and a slim round toe. The sport heel is great for any occasion.",
+		"technical_specs":["detail 1", "detail 2", "detail 3"],
+		"price":30
 	},
 	{
-		"product_name":"Macbook Air",
-		"product_description":"This is a laptop computer with a little of power",
-		"technical_specs":["mem 4gb","storage 100gb"],
-		"price":1199
+		"product_name":"Black Wedge Sandals",
+		"product_description":"Casual or dressy wedge sandal, great for summer styles. Elastic upper.",
+		"technical_specs":["detail 1", "detail 2", "detail 3"],
+		"price":30
 	},
 	{
-		"product_name":"Power Mac",
-		"product_description":"This is a desktop computer with a lot of power",
-		"technical_specs":["mem 32gb","storage 1000gb"],
-		"price":1999
+		"product_name":"Black Pointed Toe Mule",
+		"product_description":"TPointed toe stylish mule. Block heel is great for ease of walking and comfort.",
+		"technical_specs":["detail 1", "detail 2", "detail 3"],
+		"price":40
 	}
 
 ]

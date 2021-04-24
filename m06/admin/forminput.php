@@ -55,7 +55,7 @@ if(isset($_GET['action'])) {
 
 
 
-function showUserPage($product) {
+function showProductPage($product) {
 
 $id = $_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
@@ -75,7 +75,7 @@ $display = <<<HTML
 		<span>$product->price</span>
 	</div>
 	<div>
-		<strong>Technical Specs</strong>
+		<strong>Product Details</strong>
 		<span>$technical_specs</span>
 	</div>
 </div>
@@ -93,8 +93,8 @@ $form = <<<HTML
 		<input class="form-input" name="product-description" id="product-description" type="text" value="$product->product_description" placeholder="Enter the Product Description">
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="tech-specs">Technical Specs</label>
-		<input class="form-input" name="tech-specs" id="tech-specs" type="text" value="$technical_specs" placeholder="Enter the Technical Specs, comma separated">
+		<label class="form-label" for="tech-specs">Details</label>
+		<input class="form-input" name="tech-specs" id="tech-specs" type="text" value="$technical_specs" placeholder="Enter details, comma separated">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Price</label>
@@ -149,6 +149,7 @@ HTML;
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Product List</a></li>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 				</ul>
@@ -163,7 +164,7 @@ HTML;
 			<?php 
 
 			if(isset($_GET['id'])) {
-				showUserPage($_GET['id'] == "new" ? $empty_product : $products->products[$_GET['id']]);
+				showProductPage($_GET['id'] == "new" ? $empty_product : $products->products[$_GET['id']]);
 			} else {
 
 			?>
@@ -187,6 +188,5 @@ HTML;
 		</div>
 	</div>
 	
-<?php include "../parts/footer.php"; ?>	
 </body>
 </html>

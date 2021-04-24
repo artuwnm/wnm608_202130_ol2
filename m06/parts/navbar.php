@@ -10,9 +10,9 @@
 			<ul>
 				<!--li*3>a[href=#]{link$}-->
 					<li><a href="index.php">Home</a></li>
-					<li><a href="store.php">Store</a></li>
+					<li><a href="product_list.php">Store</a></li>
 					<li><a href="shopping_bag.php">Shopping Bag</a></li>
-					<li><a href="product_list.php">Admin</a></li>
+					<li><a href="../admin/forminput.php">Admin</a></li>
 			</ul>
 
 		<div class="form-control">
