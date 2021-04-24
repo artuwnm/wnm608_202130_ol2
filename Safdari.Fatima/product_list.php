@@ -15,28 +15,37 @@
 
      
 <div class="container">
-     <h2>Product List</h2>
+     
           <div class="form-control">
                <form>
                      <input type="search" class="hotdog" placeholder="Search">
                </form>
           </div>
 </div>
-<div class="container" id="tableofcontents">
-     		<h2>Traditional</h2>
-     			<div class="container">
+<div class="container">
 		
-			<!--<h2>Product List</h2>
+			<h2>Product List</h2>
+		
+          <?php
+      include_once "lib/php/functions.php";
+      include_once "parts/templates.php";
 
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-			</ul>
-		</div>-->
+
+      $result = makeQuery(
+          makeConn(),
+          "
+          SELECT *
+          FROM `products`
+          ORDER BY `price` DESC
+          LIMIT 12
+          "
+     );
+     echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div";
+          ?>
 	</div>
-     		<div class="grid gap">
-     			<div class="col-xs-12 col-md-4">
+</div>
+     		<!--    <div class="grid gap">
+     		<div class="col-xs-12 col-md-4">
      				<figure class="figure">
      			<img src='img/bamiyeh.jpg' alt="">
      			<figcaption><li><a href="product_item.php?id=1">Bamiyeh</a></li>
@@ -64,7 +73,7 @@
                <div class="container" id="tableofcontents">
                <h2>Cookies</h2>
                     <div class="container">
-          <!--<div class="card soft">
+        <div class="card soft">
                <h2>Product List</h2>
 
                <ul>
@@ -73,7 +82,7 @@
                     <li><a href="product_item.php?id=9">Product 9</a></li>
                     
                </ul>
-          </div>-->
+          </div>
      </div>
                <div class="grid gap">
                     <div class="col-xs-12 col-md-4">
@@ -107,7 +116,7 @@
 		<div class="container" id="tableofcontents">
      		<h2>Special</h2>
      			<div class="container">
-		<!--<div class="card soft">
+		<div class="card soft">
 			<h2>Product List</h2>
 
 			<ul>
@@ -117,7 +126,7 @@
 				
 			</ul>
 		</div>
-	</div>-->
+	</div>
      		<div class="grid gap">
      			<div class="col-xs-12 col-md-4">
      				<figure class="figure">
@@ -148,7 +157,7 @@
 	
           <div class="container" id="tableofcontents">
                <h2>Gift</h2>
-                    <div class="container">
+                    <div class="container">-->
           <!--<div class="card soft">
                <h2>Product List</h2>
 
@@ -158,7 +167,7 @@
                     <li><a href="product_item.php?id=9">Product 9</a></li>
                     
                </ul>
-          </div>-->
+          </div>
      </div>
 
                <div class="grid gap">
@@ -246,11 +255,10 @@
                </figure>              
           </div>
 
-</div>
+</div>-->
 
 
 
 
-          <!--<?php include "parts/footer.php"; ?>-->
 </body>
 </html>
