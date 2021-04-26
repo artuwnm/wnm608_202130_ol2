@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 18, 2021 at 08:04 PM
+-- Generation Time: Apr 24, 2021 at 02:36 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
-  `Name` varchar(64) NOT NULL,
-  `Description` varchar(128) NOT NULL,
-  `Details` text NOT NULL,
-  `Price` decimal(10,2) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `description` varchar(128) NOT NULL,
+  `details` text NOT NULL,
+  `price` decimal(10,2) NOT NULL,
   `date_create` datetime NOT NULL,
   `date_modify` datetime NOT NULL,
   `thumbnail` varchar(128) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `Name`, `Description`, `Details`, `Price`, `date_create`, `date_modify`, `thumbnail`, `images`) VALUES
+INSERT INTO `products` (`id`, `name`, `description`, `details`, `price`, `date_create`, `date_modify`, `thumbnail`, `images`) VALUES
 (1, 'Salmon', 'Fresh \"King\" Salmon', 'Wild caught Alaskan salmon.  Price per pound.', 19.99, '2021-04-17 23:00:50', '2021-04-17 23:00:50', 'img/salmon1.jpg', 'img/salmon1.jpg,images/salmon2.jpg'),
 (2, 'Tuna', 'Fresh Yellowfin Tuna', 'Ahi Yellowfin Tuna sustainably caught from Hawaii.  Price per pound.', 29.99, '2021-04-17 23:01:10', '2021-04-17 23:01:10', 'img/tuna1.jpg', 'img/tuna1.jpg'),
 (3, 'Shrimp', 'Fresh Jumbo Black Tiger Prawns', 'Wild Jumbo Black Tiger Prawns sustainably caught from Mexico.  Price per pound.', 26.99, '2021-04-17 23:01:40', '2021-04-17 23:01:40', 'img/shrimp1.jpg', 'img/shrimp1.jpg'),
