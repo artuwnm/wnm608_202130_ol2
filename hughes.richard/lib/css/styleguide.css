@@ -98,6 +98,10 @@ a:hover {
 	justify-content: center;
 }
 
+.flex-column{
+	flex-direction: column;
+}
+
 /* Small Classes */
 
 .media-image{
@@ -230,7 +234,7 @@ a:hover {
 
 
 .card {
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-neutral-white);
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
@@ -241,6 +245,8 @@ a:hover {
 .card.soft {
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	border-radius: 0.5em;
+
+
 }
 
 .card.hard {
@@ -266,6 +272,15 @@ a:hover {
 	background-color: var(--color-neutral-cream);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	border-radius: 0.5em;
+}
+
+.card-section {
+	padding: 1em;
+}
+
+.card-section~.card-section {
+
+	border-top: 1px solid var(--color-neutral-light)
 }
 
 /* VIEW WINDOW COMPONENT */
@@ -410,7 +425,7 @@ margin: 1em 0;
 
 .form-select>select {
 	padding: 0.5em 1.3em;
-	background-color: var(color-neutral-light);
+	background-color: var(--color-neutral-light);
 	border-radius: 0.3em;
 	cursor: pointer;
 }
