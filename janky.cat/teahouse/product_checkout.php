@@ -87,11 +87,24 @@
 			</form>	
 				
 			<div class="form-control">
-			<a href="product_confirmation.php"><button type="button"class="form-button">Place Order</button></a>
-
+			<a href="product_confirmation.php"><button type="button"class="large-form-button">Place Order</button></a>
+			</div>
 		</div>
 	</div>
 
+<br>
+
+	<div>
+	<?php include "parts/newsletter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/fatfooter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/footer.php"; ?>
+	</div>
 
 </body>
 </html>

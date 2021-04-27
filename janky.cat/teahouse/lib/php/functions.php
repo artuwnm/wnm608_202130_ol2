@@ -110,22 +110,3 @@ function getCartItems () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,28 +6,11 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
-	<link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
+	<?php include "parts/meta.php"; ?>
 </head>	
 <body>
 
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-none">
-		<h1>A Website Built with Emmet</h1>
-			</div>
-		<div class="flex-stretch"></div>
-		<nav class="flex-none nav">
-		<ul class="container display-flex">
-			<li> <a href="#articles1">Link 1</a></li>
-			<li> <a href="#articles2">Link 2</a></li>
-			<li> <a href="#articles3">Link 3</a></li>
-			<li> <a href="#articles4">Link 4</a></li>
-		</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 		<div class="card soft">

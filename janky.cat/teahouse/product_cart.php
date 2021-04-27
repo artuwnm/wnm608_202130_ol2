@@ -28,14 +28,28 @@ $cart_items = getCartItems();
 					<?=array_reduce($cart_items,'cartListTemplate') ?>
 				</div>
 			</div>
+				
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
-					<?= cartTotals() ?>
+			<div class="card soft flat">
+				<?= cartTotals() ?>
 				</div>
 			</div>
 		</div>
 	</div>
 
+<br>
+
+	<div>
+	<?php include "parts/newsletter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/fatfooter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/footer.php"; ?>
+	</div>
 
 </body>
 </html>

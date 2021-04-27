@@ -10,7 +10,7 @@ $image_elements = array_reduce($images,function($r,$o){
 	return $r."<img src='img/$o'>";
 });
 
-//print_p($_SESSION);
+//print_p($product);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -39,9 +39,11 @@ $image_elements = array_reduce($images,function($r,$o){
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+				<form class="card flat" method="post" action="cart_actions.php">
+
 
 					<input type="hidden" name="product-id" value="<?= $product->id ?>">
+
 
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
@@ -80,7 +82,7 @@ $image_elements = array_reduce($images,function($r,$o){
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="card-section">
 						<div>
 						<input type="submit" class="form-button" value="Add to Cart">	
@@ -94,6 +96,20 @@ $image_elements = array_reduce($images,function($r,$o){
 			<p><?= $product->description?></p>
 
 		</div>
+	</div>
+
+<br>
+
+	<div>
+	<?php include "parts/newsletter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/fatfooter.php"; ?>
+	</div>
+
+	<div>
+	<?php include "parts/footer.php"; ?>
 	</div>
 
 

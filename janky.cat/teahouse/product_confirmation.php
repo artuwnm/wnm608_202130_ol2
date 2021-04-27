@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html>
+<?php 
+include_once "lib/php/functions.php";
+resetCart();
+?><!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Cart | Tea House</title>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+
 	<?php include "parts/meta.php"; ?>
-</head>
+</head>	
 <body>
+
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="card soft">
@@ -39,8 +45,6 @@
 	</div>
 
 
-	</div>
-
 <br>
 
 	<div>
@@ -54,6 +58,7 @@
 	<div>
 	<?php include "parts/footer.php"; ?>
 	</div>
+
 
 </body>
 </html>
