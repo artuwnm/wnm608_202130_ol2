@@ -9,7 +9,7 @@ http://catjankydesign.com/wnm608/janky.cat/janky.cat/styleguide
 
 ## In Progress
 
-http://catjankydesign.com/wnm608/janky.cat/janky.cat/notes/product_list.php
+http://catjankydesign.com/wnm608/janky.cat/janky.cat/product_list.php
 
 
 ## Tea House
