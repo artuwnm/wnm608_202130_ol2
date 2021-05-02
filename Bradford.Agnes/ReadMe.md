@@ -26,6 +26,11 @@ http://agnesbradford.com/aau/wmn608/m06/admin/forminput.php
 http://agnesbradford.com/aau/wmn608/m06/styleguide/index.php
 
 
+## Module 11 Relevant Links: Project Index, Shopping Bag (aka Cart) and checkout
+
+http://agnesbradford.com/aau/wmn608/m06/styleguide/index.php
+
+http://agnesbradford.com/aau/wmn608/m06/styleguide/shopping_bag.php
 
 
 
