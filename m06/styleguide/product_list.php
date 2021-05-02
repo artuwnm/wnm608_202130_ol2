@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+<?php
+
+include_once "../lib/php/functions.php";
+
+include_once "../parts/templates.php";
+
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Product List</title>
+	<title>Store</title>
 <?php include "../parts/meta.php"; ?>		
 	
 </head>
@@ -14,12 +22,8 @@
 <div class="container">
 	<div class= "card soft">	
 
+
 <?php
-
-include_once "../lib/php/functions.php";
-
-include_once "../parts/templates.php";
-
 
 $result = makeQuery(
 	makeConn(),
@@ -34,6 +38,7 @@ $result = makeQuery(
 echo "<div class='grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
 
 ?>
+
 
 	</div>
 </div>	

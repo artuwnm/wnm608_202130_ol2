@@ -150,7 +150,7 @@ HTML;
 			<nav class="nav nav-flex flex-none">
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Product List</a></li>
+					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Admin Product List</a></li>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 				</ul>
 			</nav>

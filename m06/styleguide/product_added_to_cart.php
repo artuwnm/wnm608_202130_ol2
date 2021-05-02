@@ -4,6 +4,10 @@ include_once "../lib/php/functions.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =" .$_GET['id'])[0];
 
+$cart_product = cartItemById($_GET['id']);
+
+
+
 
 ?>
 
@@ -24,24 +28,19 @@ $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =" .$_GET[
 
 
 <div class="container">
-	<div class= "card soft">
-		<h2>You added <?=$product->name ?> to your cart.</h2>
+	<div class="card soft">
+		<h2>You added <?= $product->name ?> to your cart.</h2>
+			<p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
 
 
-	<div class=".col-xs-12 col-md-6">
-			
-			<div class="display-flex">
-			<div class="flex-none"><a href="product_list.php" class="form-button">Continue Shopping</a></div>
-			</div>
-			<br>
-			<div class="display-flex">
-			<div class="flex-none"><a href="shopping_bag.php" class="form-button">Go to Shopping Bag</a></div>
-			</div>
+<div class="form-control">
+	<div class="flex-none"><a href="product_list.php"class="form-button">Continue Shopping</a>
 	</div>
-
-		
+<div class="form-control">
+	<div class="flex-none"><a href="shopping_bag.php"class="form-button">Go to Bag</a></div>
 	</div>
 </div>
+	</div>
 
 <?php include "../parts/footer.php"; ?>
 

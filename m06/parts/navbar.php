@@ -1,3 +1,9 @@
+<?php
+
+include_once "lib/php/functions.php";
+
+?>
+
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-none">
@@ -11,7 +17,10 @@
 				<!--li*3>a[href=#]{link$}-->
 					<li><a href="index.php">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>
-					<li><a href="shopping_bag.php">Shopping Bag</a></li>
+					<li><a href="shopping_bag.php"> 
+						<span>Shopping Bag</span>
+						<span class="badge"><?= makeCartBadge(); ?></span> 
+					</a></li>
 					<li><a href="../admin/forminput.php">Admin</a></li>
 			</ul>
 
