@@ -396,6 +396,10 @@ margin: 1em 0;
 
 }
 
+.form-button.inline{
+	width: initial;
+}
+
 .form-button:hover {
 	text-decoration: none;
 
