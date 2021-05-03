@@ -106,4 +106,16 @@ p {
 	object-fit: contain;
 }
 
+.footer {
+	line-height: 2em;
+	text-align: center;
+}
+
+span.badge:not(:empty)::before {
+	content: '(';
+}
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
 

@@ -3,43 +3,45 @@
 include_once "lib/php/functions.php";
       
 
-$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =" .$_GET['id'])[0];
+
+$cart_product = cartItemById($_GET['id']);
+
+
 
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Confirmation</title>
+	<meta charset="utf-8">
+	<title>Added To Shopping Cart</title>
 
-	<?php include "parts/meta.php"; ?>
+
+<?php include "parts/meta.php"; ?>
+		
+	
 </head>
 <body>
-	
-	<?php include "parts/navbar.php"; ?>
 
-		<!-- viewport -->
+<?php include "parts/navbar.php"; ?>
+
 
 <div class="container">
 	<div class="card soft">
-		<h2>You added <?=$product->name ?> to your cart</h2>
+		<h2>You added <?= $product->name ?> to your cart.</h2>
+			<p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
 
-		<div class="display-flex">
-			<div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>
-			<div class="flex-stretch"></div>
-			<div class="flex-none"><a href="cart.php">Go To Cart</a></div>
-		</div>	
+
+<div class="form-control">
+	<div class="flex-none"><a href="product_list.php"class="form-button">Continue Shopping</a>
+	</div>
+<div class="form-control">
+	<div class="flex-none"><a href="cart.php"class="form-button">Go to Cart</a></div>
 	</div>
 </div>
-
-<div class="container">
-	<article id="article4" class="article">
-		<div class="copyright">
-			<p>Copyright San Marino Seafood 2021</p>
-		</div>
-	</article>
-</div>
+	</div>
 
 
 </body>

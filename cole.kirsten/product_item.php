@@ -9,7 +9,7 @@ $images = explode(",", $product->images);
 
 $image_elements = array_reduce($images,function($r,$o){
 return $r."<img src='$o'>";
-})
+});
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -18,8 +18,8 @@ return $r."<img src='$o'>";
 	<title>Product Item</title>
 
 	<?php include "parts/meta.php"; ?>
+	<script src="js/product_thumbs.js"></script>
 
- <script src="js/product_thumbs.js"></script>
 </head>
 <body>
 	
@@ -30,66 +30,83 @@ return $r."<img src='$o'>";
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="images-main">
-					<img src="<?=$product->thumbnail ?>">
+						<img src="<?=$product->thumbnail ?>">
+					</div>
+				<div class="images-thumbs">
+					<?=$image_elements?>
 				</div>
-			<div class="images-thumbs">
-				<?= $image_elements ?>
-			</div>
-
 			</div>
 		</div>
 		<div class="col-xs-12 col-md-5">
-			<div class="card soft flat">
+			<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+
+				<input type="hidden" name="product-id" value="<?= $product->id ?>">
+
 				<div class="card-section">
 				<h2 class="product-name"><?=$product->name ?></h2>
 				<div class="product-price">&dollar;<?=$product->price ?></div>
 				</div>
 				<div class="card-section">
-					<label for="product-amount" class="form-lable">Amount</label>
-					<div class="form-select" id="product-amount">
-						<select>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
+					<div class="form-control">
+						<label for="product-amount" class="form-lable">Amount</label>
+							<div class="form-select">
+								<select id="product-amount" name="product-amount">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
 							
-						</select>
+								</select>
+							</div>
+					</div>
+					<div class="form-control">
+						<label for="product-color" class="form-label">Color</label>
+							<div class="form-select">
+								<select id="product-color" name="product-color">
+									<option>Ounce</option>
+									<option>Pound</option>		
+								</select>
+							</div>
+						<p><?= $product->description?></p>
+					<div class="form-control">
+						<input type="submit" class="form-button" value="Add to Shopping Bag">
+					</div>
+					</form>
+					<div class="form-control">
+						<a href="product_list.php" class="form-button">Back to Shopping</a>
+					<div class="form-control">
+						<a href="shopping_bag.php" class="form-button">Review Bag</a>
+						</div>
 					</div>
 				</div>
-					<div class="card-section">
-					<a href="product_added_to_cart.php?id=<?=$product->id ?>" class="form-button">Add To Cart</a>
-			
-				
 			</div>
-					<div class="card-section">
-					<a href="product_list.php" class="form-button">Back to Shopping List</a>
-			
-				
-			</div>
-
-
 		</div>
-	</div>	</div>
-
-	<div class="card soft">
-		<p><?=$product->description ?></p>
-		
 	</div>
 
+			
+
 		
 
-	
+	</div>
+
+</div>
+
+<div class="container">
+	<article id="article4" class="article">
+		<div class="copyright">
+			<p>Copyright San Marino Seafood 2021</p>
+		</div>
+	</article>
+</div>
+
 </body>
 </html>
-		</div>
-	</div>
-
 
 </body>
 </html>

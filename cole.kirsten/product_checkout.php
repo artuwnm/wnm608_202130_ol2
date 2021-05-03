@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+	include_once "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -17,6 +21,16 @@
 		<h2>Product Checkout</h2>
 
 		<form class="form">
+			<h3>Your Name</h3>
+				<div class="form-control">
+					<label for="first-name" class="form-label">First Name</label>
+					<input type="text" placeholder="First Name" class="form-input">
+				</div>
+								
+				<div class="form-control">
+					<label for="last-name" class="form-label">Last Name</label>
+					<input type="text" placeholder="Last Name" class="form-input">
+				</div>
 			<h3>Address</h3>
 				<div class="form-control">
 					<label for="address-street" class="form-label">Street</label>
