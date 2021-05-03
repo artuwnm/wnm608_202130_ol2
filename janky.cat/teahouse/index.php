@@ -1,7 +1,15 @@
-<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Tea House</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<?php include "parts/meta.php"; ?>
 </head>	
 <body>
@@ -13,7 +21,7 @@
 			<div> 
 				<h1>Our spring collection has arrived.</h1> 
 					<div class="form-control">
-					 	<a href="shop.php"><button type="button"class="small-form-button-round">Shop Now</button></a>
+					 	<a href="product_list.php"><button type="button"class="small-form-button-round">Shop Now</button></a>
 					</div>
 			</div>
 		</div>
@@ -23,7 +31,7 @@
 		<div class="container grid gap">
 			<div class="col-xs-12 col-md-6">
 			<figure class="figure product-overlay">
-				<img src="https://via.placeholder.com/600x400?text=product" alt=""> 
+				<img src="img/gifts.png" alt=""> 
 					<figcaption>
 						<div class="caption-body">
 							<h4>Black Teas</h4>
@@ -34,7 +42,7 @@
 
 			<div class="col-xs-12 col-md-6">
 			<figure class="figure product-overlay">
-				<img src="https://via.placeholder.com/600x400?text=product" alt=""> 
+				<img src="img/education.png" alt=""> 
 					<figcaption>
 						<div class="caption-body">
 							<h4>White Teas</h4>
@@ -56,7 +64,7 @@
 
 			<div class="col-xs-12 col-md-8">
 				<figure class="figure basic">
-					<img src="https://via.placeholder.com/400x200?text=product" alt=""> 
+					<img src="img/tea.png" alt=""> 
 				</figure>
 			</div>
 
@@ -64,86 +72,25 @@
 
 	</div>
 
+	<br>
+
 	<div class="container">
 		<h3>Popular Teas</h3>
+			<?php
 
-		<div class="container grid gap">			
-			<div class="col-xs-12 col-md-3">
-				<figure class="figure">
-				<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-				<figcaption>
-					<div class="display-flex">
-						<div class="productname">Product Name</div>
-					</div>
-					<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
+			$result = makeQuery(
+				makeConn(), 
+				"
+				SELECT *
+				FROM `products`
+				ORDER BY `date_create` DESC
+				LIMIT 4
+				"
+			);
 
-					<div>
-						<div class="form-control">
-						<button type="button"class="small-form-button">Learn More</button>
-						</div>
+			echo "<div class= 'productlist grid gap'>", array_reduce($result,'productListHomepage'),"</div>";
 
-					</div>
-				</figcaption>	
-				</figure>
-			</div>
-
-			<div class="col-xs-12 col-md-3">
-				<figure class="figure">
-				<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-				<figcaption>
-					<div class="display-flex">
-						<div class="productname">Product Name</div>
-					</div>
-					<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
-
-					<div>
-						<div class="form-control">
-						<button type="button"class="small-form-button">Learn More</button>
-						</div>
-
-					</div>
-				</figcaption>	
-				</figure>
-			</div>
-
-			<div class="col-xs-12 col-md-3">
-				<figure class="figure">
-				<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-				<figcaption>
-					<div class="display-flex">
-						<div class="productname">Product Name</div>
-					</div>
-					<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
-
-					<div>
-						<div class="form-control">
-						<button type="button"class="small-form-button">Learn More</button>
-						</div>
-					</div>
-				</figcaption>	
-				</figure>
-			</div>
-
-			<div class="col-xs-12 col-md-3">
-				<figure class="figure">
-				<img src="https://via.placeholder.com/400x400?text=product" alt=""> 
-				<figcaption>
-					<div class="display-flex">
-						<div class="productname">Product Name</div>
-					</div>
-					<div class="description"> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, harum.</div>
-
-					<div>
-						<div class="form-control">
-						<button type="button"class="small-form-button">Learn More</button>
-						</div>
-					</div>
-				</figcaption>	
-				</figure>
-			</div>
-
-
-		</div>
+			?>
 	</div>
 
 <br>

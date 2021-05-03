@@ -18,4 +18,4 @@ Homepage:
 http://www.catjankydesign.com/wnm608/janky.cat/teahouse/index.php
 
 Styleguide:
-http://catjankydesign.com/wnm608/janky.cat/janky.com/teahouse/styleguide
+http://catjankydesign.com/wnm608/janky.cat/teahouse/styleguide/

@@ -2,7 +2,8 @@
 	<div class="container grid gap">
 		<div class="col-xs-12 col-md-4"></div>
 			<div class="col-xs-12 col-md-4">
-				<h3>Sign up for our newsletter.</h3>
+				<h2>Stay Connected</h2>
+				<p>Sign up for our newsletter</p>
 				<form>
 					<div class="form-control">
 						<label class="form-label">Email Address</label>
