@@ -122,15 +122,6 @@ a:hover {
 		background-color:var(--color-main-light);
 		color:inherit;
 	}
-	span.badge(:empty)::after {
-	content: ')';
-}
-
-
-
-span.badge(:empty)::before {
-	content: '(';
-}
 
 .nav-material ul,
 .nav-crumbs ul,
