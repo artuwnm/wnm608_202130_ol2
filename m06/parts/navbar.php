@@ -18,16 +18,11 @@ include_once "lib/php/functions.php";
 					<li><a href="index.php">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>
 					<li><a href="shopping_bag.php"> 
-						<span>Shopping Bag</span>
+						<span class>Shopping Bag</span>
 						<span class="badge"><?= makeCartBadge(); ?></span> 
 					</a></li>
 					<li><a href="../admin/forminput.php">Admin</a></li>
 			</ul>
-
-		<div class="form-control">
-		<form >
-			<input type="search" class="hotdog" placeholder="Search">
-		</form>
 		</nav>
 	</div>
 </div>
