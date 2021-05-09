@@ -1,6 +1,6 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =" .$_GET['id'])[0];
 
@@ -18,13 +18,13 @@ $cart_product = cartItemById($_GET['id']);
 	<title>Added To Shopping Bag</title>
 
 
-<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 		
 	
 </head>
 <body>
 
-<?php include "../parts/navbar.php"; ?>
+<?php include "parts/navbar.php"; ?>
 
 
 <div class="container">
@@ -42,7 +42,7 @@ $cart_product = cartItemById($_GET['id']);
 </div>
 	</div>
 
-<?php include "../parts/footer.php"; ?>
+<?php include "parts/footer.php"; ?>
 
 </body>
 </html>

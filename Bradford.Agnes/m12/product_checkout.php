@@ -1,6 +1,6 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +8,13 @@ include_once "../lib/php/functions.php";
 	<title>Checkout</title>
 
 
-<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 		
 	
 </head>
 <body>
 
-<?php include "../parts/navbar.php"; ?>
+<?php include "parts/navbar.php"; ?>
 
 
 <div class="container">

@@ -1,6 +1,6 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 resetCart();
 ?><!DOCTYPE html>
 <html lang="en">
@@ -9,13 +9,13 @@ resetCart();
 	<title>Confirmation Page</title>
 
 
-<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 		
 	
 </head>
 <body>
 
-<?php include "../parts/navbar.php"; ?>
+<?php include "parts/navbar.php"; ?>
 
 
 <div class="container">
@@ -25,7 +25,7 @@ resetCart();
 	</div>
 </div>
 
-<?php include "../parts/footer.php"; ?>
+<?php include "parts/footer.php"; ?>
 
 </body>
 </html>

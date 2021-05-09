@@ -1,8 +1,8 @@
 <?php
 
 
-include_once "../lib/php/functions.php";
-include_once "../parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 //$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (4,7,10)");
 
@@ -14,12 +14,12 @@ $cart_items = getCartItems();
 <head>
 	<meta charset="UTF-8">
 	<title>Cart Page</title>
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>
 
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 		<h2>In Your Cart</h2>

@@ -1,6 +1,6 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +8,16 @@ include_once "../lib/php/functions.php";
 	<title>The Black Closet Home</title>
 
 
-<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 		
 	
 </head>
 <body>
 
-<?php include "../parts/navbar.php"; ?>
+<?php include "parts/navbar.php"; ?>
 
 
-<div class="view-window" style="background-image: url('../img/cover_image.jpg')"></div>
+<div class="view-window" style="background-image: url('img/cover_image.jpg')"></div>
 
 <div class="container">
 	<div class="card soft">
@@ -28,10 +28,10 @@ always adding some fabulous new find to my wardrobe. The only problem is I tend 
 	</div>
 	
 </div>
-<div class="view-window" style="background-image: url('../img/cover_image2.jpg')"></div>
+<div class="view-window" style="background-image: url('img/cover_image2.jpg')"></div>
 
 
-<?php include "../parts/footer.php"; ?>
+<?php include "parts/footer.php"; ?>
 
 </body>
 </html>

@@ -5,13 +5,13 @@
 	<title>Shoes</title>
 
 
-<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 		
 	
 </head>
 <body>
 
-<?php include "../parts/navbar.php"; ?>
+<?php include "parts/navbar.php"; ?>
 
 <h2 align="center">SHOES</h2>
 
@@ -87,7 +87,7 @@
 	</div>
 </div>
 
-<?php include "../parts/footer.php"; ?>
+<?php include "parts/footer.php"; ?>
 
 </body>
 
