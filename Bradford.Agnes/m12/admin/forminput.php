@@ -14,7 +14,6 @@ $empty_product = (object)[
 ];
 
 
-
 // file_put_contents json_encode explode $_POST
 // CRUD, Create Read Update Delete
 

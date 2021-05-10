@@ -15,7 +15,8 @@ http://agnesbradford.com/aau/wmn608/mod04/styleguide/index.html
 
 http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/index.php
 
-http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/shopping_bag.php
+My product list in progress
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/product_list.php
 
 
 
