@@ -58,7 +58,7 @@ include_once "parts/templates.php";
 		</div>
 		</div>
 
-	<div class="flex-none">	
+<div class="flex-none">	
 				<div class="form-select">
 					<select class="js-sort">
 						<option value="1">Newest</option>
@@ -70,12 +70,11 @@ include_once "parts/templates.php";
 			</div>
 		</div>
 		</div>
+		</div>
 
 
-
-<div class='productlist grid gap'></div>
-
-
+			<div class= 'productlist grid gap'></div>
+			
 	</div>
 
 

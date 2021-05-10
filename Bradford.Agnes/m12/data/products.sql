@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 18, 2021 at 05:44 PM
+-- Generation Time: May 09, 2021 at 07:10 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -40,14 +40,14 @@ CREATE TABLE `products` (
   `description` text NOT NULL,
   `details` text NOT NULL,
   `thumbnail` varchar(128) NOT NULL,
-  `image` varchar(256) NOT NULL
+  `images` varchar(256) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `size`, `brand`, `price`, `category`, `date_create`, `date_modify`, `description`, `details`, `thumbnail`, `image`) VALUES
+INSERT INTO `products` (`id`, `name`, `size`, `brand`, `price`, `category`, `date_create`, `date_modify`, `description`, `details`, `thumbnail`, `images`) VALUES
 (1, 'Black Ankle Jogger', 'Large', 'Charlotte Russe', 10.00, 'Pants', '2021-04-18 16:33:35', '0000-00-00 00:00:00', 'Relaxed stretchy lightweight pants. Gathered at the ankle. Drawstring waist.  Never used and tags attached. ', '95% Polyester, 5% Spandex, Machine wash with like colors.', 'jogger_thumbnail.jpg', 'jogger.jpg'),
 (2, 'Black Active Legging', 'Large', 'Mondetta', 15.00, 'Pants', '2021-04-18 01:00:41', '0000-00-00 00:00:00', 'Hight waist,4-way stretch and moisture wicking legging. Ankle length. Side pockets . Sheer trim detail. Inseam is 26.5', '88% Polyester, 12% Spandex. Machine wash with like colors. Gentle cycle. ', 'legging_thumbnail.jpg', 'legging.jpg'),
 (3, 'Leather Look Pointe Pants', 'Large', 'Old Navy', 30.00, 'Pants', '2021-04-18 16:46:59', '0000-00-00 00:00:00', 'Leather looking ankle pants. Stretchy for a nice fit. Never worn. Tags attached. ', '95% Polyester, 5% Spandex. PU coated. Machine wash inside out. Gentle cycle. ', 'leatherpant_thumbnail.jpg', 'leatherpant.jpg'),
