@@ -1,4 +1,8 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php"; 
+include_once "parts/templates.php"; 
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,7 +31,7 @@
 
 
 <div class="container" id="tableofcontents">
-    <h4><span>You Might Also Like</span></h4>
+  <!--<h4><span>You Might Also Like</span></h4>
      		<div class="grid gap">
      			<div class="col-xs-12 col-md-4">
      				<figure class="figure">
@@ -51,12 +55,29 @@
                     <div>$14.99</div></figcaption>
      		</figure>
      	</div>
-    	</div>
+    	</div>-->
 
 </div>
 
 
-<div class="container">        	
+</div>
+<div class="container">
+    <h4><span>You Might Also Like Our Special Gift</span></h4>
+    <?php
+
+      recommendedCategory("gift");
+
+    ?>
+        <h4><span>Traditional Box</span></h4>
+    <?php
+
+      recommendedCategory("traditional");
+
+    ?>
+</div>
+
+<div class="container"> 
+
         <h3>Subscribe to our Sweet Newsletter!</h3> 
           <div class="grid gap">
                <div class="col-xs-12 col-md-6">
@@ -72,11 +93,10 @@
           <div>
 </div>
 </div>
-</div>
 
 
 
-<!--<?php include "parts/footer.php"; ?>-->
+
                         
 </body>
 

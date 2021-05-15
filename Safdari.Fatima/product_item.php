@@ -1,6 +1,7 @@
 
     <?php
       include_once "lib/php/functions.php";
+       include_once "parts/templates.php";
       
 
       $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
@@ -49,6 +50,7 @@
 
 				<div class="card-section">
 				<h2 class="product-name"><?=$product->name ?></h2>
+				<div class="product-categry"><?=$product->category ?></div>
 				<div class="product-price">&dollar;<?=$product->price ?></div>
 				</div>
 
@@ -95,7 +97,8 @@
 				
 			</div>
 		</form>
-	</div>	
+	</div>
+
 </div>
 
 
@@ -103,8 +106,12 @@
 		<p><?=$product->description ?></p>
 		
 	</div>
+	 <h4><span>Recommended Products</span></h4>
+	<?php 
+	recommendedSimilar($product->category,$product->id);
 
-		
+	 ?>	
+	</div>
 
 	
 </body>
@@ -119,6 +126,3 @@
 
 
 
-<!--<p>This is item # <?= $_GET['id'] ?> </p>
-		<p><a href="product_added_to_cart.php">Add To Cart</a></p>
-		</div>-->
