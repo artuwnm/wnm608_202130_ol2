@@ -3,24 +3,23 @@
 ## Relevant links
 http://agnesbradford.com
 
-http://agnesbradford.com/aau/wmn608/mod04/styleguide
-
-http://agnesbradford.com/aau/wmn608/mod04/styleguide/index.html
-
-
-
-
-
-## Module 12 Relevant Links all in corrected directory: 
-
-Project Index
-http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/index.php
-
-My product list (store) in progress
-http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/product_list.php
-
 Styleguide
 http://agnesbradford.com/aau/wmn608/bradford.agnes/styleguide/index.html
+
+Module 12
+Index and product list with search, sort and filter
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/index.php
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m12/product_list.php
+
+Module 13
+Index with shopping recommendations, admin page and example product page with similar recommendations
+
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m13/index.php
+
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m13/admin
+
+
+http://agnesbradford.com/aau/wmn608/bradford.agnes/m13/product_item.php?id=14
 
 
 

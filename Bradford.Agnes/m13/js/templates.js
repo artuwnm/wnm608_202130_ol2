@@ -3,6 +3,7 @@ const listItemTemplate = templater(o=>`
 	<figure class="figure product flex-column">
 		<div class="flex-stretch">
 			<img src="img/${o.thumbnail}">
+			</div>
 			<figcaption class="flex-none">
 				<div>&dollar;${o.price.toFixed(2)}</div>
 				<div>${o.name}</div>
