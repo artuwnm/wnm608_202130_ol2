@@ -13,7 +13,7 @@ include_once "lib/php/functions.php";
 			<nav class="nav nav-flex flex-none">
 				
 				<ul>
-					<li><a href="index.html"> Home </a></li>
+					<li><a href="index.php"> Home </a></li>
 					<li><a href="product_list.php"> Store </a></li>
 					<li><a href="styleguide/index.html"> StyleGuide </a></li>
 					<li><a href="product_cart.php"> 

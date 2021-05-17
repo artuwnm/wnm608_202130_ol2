@@ -21,7 +21,7 @@ $empty_product = (object)[
 
 try {
 	$conn = makePDOConn();
-	switch(@$_GET['action']) {
+	switch($_GET['action']) {
 		case "update":
 			$statement = $conn->prepare("UPDATE 
 				`products`
@@ -47,7 +47,7 @@ try {
 				$_POST['product-flavors'],
 				$_POST['product-origin'],
 				$_POST['product-steep_time'],
-				$_POST['product-thumbnail'],
+				$_POST['product-thunbnail'],
 				$_POST['product-images'],
 				$_POST['product-quantity'],
 				$_GET['id']
@@ -85,7 +85,7 @@ try {
 				$_POST['product-images'],
 				$_POST['product-quantity']
 			]);
-			$id = $conn->lastInsertId();
+			$ID = $conn->lastInsertId();
 			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
 	case "delete":
@@ -119,7 +119,7 @@ HTML;
 
 function showProductPage($o) {
 
-$id = $_GET['id'];
+$id =$_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
 $createorupdate = $id == "new" ? "create" : "update";
 $images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='img/$o'>";});
@@ -197,8 +197,8 @@ HTML;
 
 $output = $id == "new" ? "<div class='card soft'>$form</div>" :
 	"<div class='grid gap'>
-		<div class='col-xs-12 col-md-7'><div class= 'card soft'>$display</div></div>
-		<div class='col-xs-12 col-md-5'><div class= 'card soft'>$form</div></div>
+	<div class='col-xs-12 col-md-7'><div class= 'card soft'>$display</div></div>
+	<div class='col-xs-12 col-md-5'><div class= 'card soft'>$form</div></div>
 	</div>
 	";
 
@@ -215,7 +215,7 @@ $output
 HTML;
 }
 
-/* LAYOUT */
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -248,7 +248,7 @@ HTML;
 			
 		if(isset($_GET['id'])) {
 			showProductPage(
-				$_GET['id']=='new' ?
+				$_GET['id']=="new" ?
 				$empty_product :
 				makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` = ".$_GET['id'])[0]
 		);

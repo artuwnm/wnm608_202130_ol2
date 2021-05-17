@@ -1,4 +1,8 @@
-<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -59,6 +63,24 @@
         	</div> 
 		</div>
 	</div>
+
+
+	<div class="container">
+		<div class="card soft">
+			<h2>Information</h2>
+			<p>You'll love these products</p>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Latest Green Tea</h2>
+		<?php recommendedCategory("green");?>
+		<h2>Latest Herbal Tea</h2>
+		<?php recommendedCategory("herbal");?>
+	</div>
+
+
 
 
 	<div class="container">

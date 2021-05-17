@@ -93,6 +93,16 @@ include_once "parts/templates.php";
 			?>
 	</div>
 
+
+
+		<div class="container">
+		<h2>Latest Green Tea</h2>
+		<?php recommendedCategory("green");?>
+		<h2>Latest Herbal Tea</h2>
+		<?php recommendedCategory("herbal");?>
+	</div>
+
+
 <br>
 
 	<div>
