@@ -1,17 +1,20 @@
   
 <?php
 
-function productListTemplate($r,$o){
+function productListTemplate($r,$o) {
+	$url = 'img/' . $o->thumbnail;
 return $r.<<<HTML
 <a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
-		<figure class="figure product display-flex flex-column">
-			<div class="flex-stretch"><img src="$o->thumbnail" alt=""> </div>
+	<figure class="figure product flex-column">
+		<div class="flex-stretch">
+			<img src=$url>
 			<figcaption class="flex-none">
-					<div>&dollar;$o->price</div>
-					<div>$o->name</div>
+				<div>$o->name</div>
+				<div>&dollar;$o->price</div>
 			</figcaption>
-		</figure>
-</a>
+		</div>		
+	</figure>
+</a>	
 HTML;
 }
 
@@ -85,3 +88,20 @@ return <<<HTML
 </div>	
 HTML;
 }
+
+function recommendedProducts($a) {
+	$products = array_reduce($a,'productListTemplate');
+	echo <<<HTML
+	<div class="grid gap productlist">$products</div>
+	HTML;
+}
+
+ function recommendedCategory($cat,$limit=3) {
+ 	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+      recommendedProducts($result);
+      }
+
+ function recommendedSimilar($cat,$id=0,$limit=3) {
+ 	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+      recommendedProducts($result);
+      }

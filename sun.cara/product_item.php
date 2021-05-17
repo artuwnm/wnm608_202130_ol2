@@ -8,8 +8,10 @@
 
 	$images = explode(",",$product->images);
 	$image_elements = array_reduce($images, function($r,$o){
-		return $r."<img src='$o'>";
+		$url = 'img/' . $o;
+		return $r."<img src='$url' >";
 	});
+
 
 //print_p($_SESSION);
 	
@@ -27,14 +29,14 @@
 
 <body>
 
-	<?php include "parts/navbar.php"; ?>
+	<?php $prefix = "img/";  include "parts/navbar.php"; ?>
 
 	<div class="container">		
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="images-main">
-					<img src="<?= $product->thumbnail ?>">
+					<img src="<?php echo $prefix . $product->thumbnail ?>">
 					</div>
 					<div class="images-thumbs">
 						<?= $image_elements ?>
@@ -55,6 +57,7 @@
 				    	<label for="product-amount" class="form-label">Amount</label>
 				    	<div class="form-select">
 				    	<select  id="product-amount"  name="product-amount">
+				
 				    		<option>1</option>
 				    		<option>2</option>
 				    		<option>3</option>
@@ -82,17 +85,32 @@
 					<div class="card-section">
 						<input type="submit" class="form-button" value="Add To Cart">
 					</div>
-				</form>
-			</div>
-		</div>
 
-		<div class="card soft dark">
-			<p><?= $product->description ?></p>
-		</div>
+
+
+<div class="card-section">
+					<a href="product_list.php" class="form-button">Back to Shopping List</a>
+				
+			</div>
+		</form>
 	</div>
+
+</div>
+
+
+	<div class="card pink">
+		<p><?=$product->description ?></p>
+		
+	</div>
+	 <h2><span>Recommended Products</span></h2>
+	<?php 
+	recommendedSimilar($product->category,$product->id);
+
+	 ?>	
+	</div>
+
+	
 </body>
 </html>
-
-
 
 
