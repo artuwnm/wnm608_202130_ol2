@@ -82,7 +82,6 @@ body{
 	width: 100%;
 	outline: 0;
 	-webkit-appearance: none;
-	
 
 }
 
@@ -152,7 +151,7 @@ transform: scale(1.3,1.3);
 }
 
 .product_name {
-	font-weight: 600;/
+	font-weight: 600;
 }
 
 .product-overlay  {
@@ -212,11 +211,14 @@ transform: scale(1.3,1.3);
 		height: initial;
 		background-color: initial;
 	}
+}
 
 	.product-overlay .caption-body{
 		transform-style: none;
 		padding: 0;
 	}
+.checkout-form {
+	max-width: 50%;
 }
 
 
@@ -272,7 +274,14 @@ span.badge:not(:empty)::before{
 	content: '(';
 }
 
-
+.view-window {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
 
 
 

@@ -31,6 +31,8 @@
 	
 <div class="container">
 
+<div class="grid gap">
+		<div class="col-xs-12 col-md-7">
 <div class="card soft">
 	<h1>Product Checkout</h1>
 <form class="form">
@@ -116,6 +118,8 @@
 	</form>
 
 
+</div>
+</div>
 </div>
 </div>
 

@@ -215,7 +215,7 @@ HTML;
 <div class="container">
 	<div class="card soft">
 
-	<<?php 
+	<?php 
 
 			if(isset($_GET['id'])) {
 				showUserPage($_GET['id'] == "new" ? $empty_user : $users->users[$_GET['id']]);

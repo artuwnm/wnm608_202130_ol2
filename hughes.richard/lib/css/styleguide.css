@@ -286,7 +286,7 @@ a:hover {
 /* VIEW WINDOW COMPONENT */
 
 .view-window {
-	height: 50vh;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;

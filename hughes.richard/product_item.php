@@ -9,17 +9,16 @@
 		return $r. "<img src='images/$o'>";
 	});
 
-	// print_p($_SESSION);
-	?><!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Product Item</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Product Item</title>
+		<?php include "parts/meta.php"; ?>
+		<script src="js/product_thumbs.js"></script>
+	</head>
 
-<?php include "parts/meta.php"; ?>
 
-<script src="js/product_thumbs.js"></script>
-</head>
 <body>
 	
 <?php include "parts/navbar.php"; ?>
@@ -36,6 +35,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="col-xs-12 col-md-5">
 			<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
 
@@ -68,19 +68,17 @@
 							</div>
 					</div>
 
-					<div class="form-control">
-						<label for="product-color" class="form-label">Color</label>
-							<div class="form-select" >
-								<select id="product-color" name="product-color">
-									<option>red</option>
-									<option>green</option>
-									<option>blue</option>
-					
-								</select>
-							</div>
-					</div>
-
+				<div class="form-control">
+					<label for="product-color" class="form-label">Color</label>
+						<div class="form-select" >
+							<select id="product-color" name="product-color">
+								<option>red</option>
+								<option>green</option>
+								<option>blue</option>
+							</select>
+						</div>
 				</div>
+			</div>
 
 				<div class="card-section">
 					<input type="submit" class="form-button" value="Add To Cart"></a>
@@ -88,11 +86,11 @@
 			</form>
 		</div>
 	</div>
+
 	
 	<div class="card soft dark">
 	<p><?= $product->description?> </p>
 	</div>
-	
 </div>
 
 

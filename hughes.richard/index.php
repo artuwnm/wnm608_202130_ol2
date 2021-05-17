@@ -33,6 +33,33 @@
 
 <?php include "parts/product_overlay_grid.php"; ?>
 
+<div class="container">
+	
+	<h2>Product List</h2>
+
+	<?php 
+	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT * 
+			FROM `products`
+			ORDER BY `date_create` ASC
+			LIMIT 12
+			"
+		);
+		echo "<div class='productlist grid gap'>" ,array_reduce($result,'productListTemplate'), "</div>";
+		
+		
+	 ?>
+
+
+
+	
+</div>
+
 
 
 
