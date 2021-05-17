@@ -4,12 +4,12 @@
 include "../lib/php/functions.php";
 
 $empty_product = (object)[
-"product_name"=>"",
-"price"=>"",
-"quantity"=>"",
-"category"=>"",
-"description"=>"",
-"thumbnail"=>"",
+"product_name"=>"Traxxas Stampede RC Truck",
+"price"=>"100",
+"quantity"=>"1",
+"category"=>"Toys",
+"description"=>"This thing is fast!",
+"thumbnail"=>"rc_truck_2.jpg",
 "images"=>""
 
 ];
@@ -20,7 +20,7 @@ $empty_product = (object)[
 try {
 	$conn = makePDOConn();
 
-	switch($_GET['action']) {
+	switch(@$_GET['action']) {
 		case "update":
 			$statement = $conn->prepare("UPDATE
 				`products`
