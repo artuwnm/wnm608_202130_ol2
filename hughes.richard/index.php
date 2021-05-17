@@ -1,4 +1,7 @@
-<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
+<?php 
+	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -19,48 +22,32 @@
 <body>
 
 	<?php include "parts/navbar.php"; ?>
-
-
-
 	
-	
+		<div class="view-window" style="background-image: url(images/AdobeStock_97070867_small.jpg); ">
+			
 
+		</div>
 
-
-
-	
-		<div class="view-window" style="background-image: url(images/AdobeStock_97070867_small.jpg); "></div>
-
-<?php include "parts/product_overlay_grid.php"; ?>
 
 <div class="container">
 	
-	<h2>Product List</h2>
+	<h2>Recommended Products</h2>
 
-	<?php 
-	include_once "lib/php/functions.php";
-	include_once "parts/templates.php";
-
-		$result = makeQuery(
-			makeConn(),
-			"
-			SELECT * 
-			FROM `products`
-			ORDER BY `date_create` ASC
-			LIMIT 12
-			"
-		);
-		echo "<div class='productlist grid gap'>" ,array_reduce($result,'productListTemplate'), "</div>";
-		
-		
-	 ?>
+	
 
 
 
 	
 </div>
 
-
+<div class="container">
+	<h2>Latest Sporting Items</h2>
+<?php recommendedCategory("sporting"); ?>
+	<h2>Latest Home Items</h2>
+<?php recommendedCategory("home"); ?>
+	<h2>Latest Unusual Ephemera</h2>
+<?php recommendedCategory("ephemera"); ?>
+</div>
 
 
 

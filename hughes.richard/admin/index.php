@@ -6,6 +6,7 @@ include "../lib/php/functions.php";
 $empty_product = (object)[
 "product_name"=>"",
 "price"=>"",
+"quantity"=>"",
 "category"=>"",
 "description"=>"",
 "thumbnail"=>"",
@@ -18,9 +19,10 @@ $empty_product = (object)[
 
 try {
 	$conn = makePDOConn();
+
 	switch($_GET['action']) {
 		case "update":
-			$statement =$conn->prepare("UPDATE
+			$statement = $conn->prepare("UPDATE
 				`products`
 				SET 
 					`product_name`=?,
@@ -33,6 +35,7 @@ try {
 					`date_modify`=NOW()
 				WHERE `id` =?
 				");
+			
 			$statement->execute([
 				$_POST['product-product-name'],
 				$_POST['product-price'],
@@ -48,8 +51,8 @@ try {
 		case "create":
 		$statement =$conn->prepare("INSERT INTO
 				`products`
-				
-					(`product_name`,
+					(
+					`product_name`,
 					`price`,
 					`quantity`,
 					`category`,
@@ -59,9 +62,9 @@ try {
 					`date_create`,
 					`date_modify`
 					)
-				VALUES (?,?,?,?,?,?,NOW(),NOW(),)
-
+				VALUES (?,?,?,?,?,?,?,NOW(),NOW())
 				");
+
 			$statement->execute([
 				$_POST['product-product-name'],
 				$_POST['product-price'],
@@ -69,12 +72,14 @@ try {
 			 	$_POST['product-category'],
 			 	$_POST['product-description'],
 			 	$_POST['product-thumbnail'],
-			 	$_POST['product-images'],
+			 	$_POST['product-images']
 			]);
 			$id = $conn->lastInsertId();
 			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
 		case "delete":
+		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+		$statement->execute([$_GET['id']]);
 			header("location:{$_SERVER['PHP_SELF']}");
 			break;
 	}
@@ -115,7 +120,7 @@ $display = <<<HTML
 	</div>
 		<div class="form-control">
 		<label>Quantity</label>
-		<span>;$o->quantity</span>
+		<span>$o->quantity</span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Category</label>
@@ -139,13 +144,14 @@ HTML;
 
 $form = <<<HTML
 		<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+			<h2>$addoredit Product</h2>
 			<div class="form-control">
-				<label class="form-label" for="product-product-name" >Product Name</label>
+				<label class="form-label" for="product-product-name">Product Name</label>
 				<input class="form-input" name="product-product-name" id="product-product-name" type="text" value="$o->product_name" placeholder="Enter The Product Name">
 			</div>
 
 			<div class="form-control">
-				<label class="form-label" for="product-price" >Price</label>
+				<label class="form-label" for="product-price">Price</label>
 				<input class="form-input" name="product-price" id="product-price" type="number"  min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter The Product Price">
 			</div>
 
@@ -254,7 +260,7 @@ HTML;
 
 			<?php
 		
-			$result = makeQuery(makeConn(), "SELECT * FROM `products`");
+			$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
 		
 			echo array_reduce($result, 'productListItem');
 		

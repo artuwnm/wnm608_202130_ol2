@@ -1,5 +1,6 @@
 	<?php 
 	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
 
 	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -91,6 +92,11 @@
 	<div class="card soft dark">
 	<p><?= $product->description?> </p>
 	</div>
+
+	<H2>Recommended Products</H2>
+	<?php 
+		recommendedSimilar($product->category, $product->id);
+	 ?>
 </div>
 
 
