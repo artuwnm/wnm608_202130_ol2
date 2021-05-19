@@ -1,0 +1,32 @@
+[
+	{
+		"name":"Yoyo Wang",
+		"type":"Student",
+		"email":"yoyowang0326@gmail.com",
+		"classes":[608,617,802]
+	},
+	{
+		"name":"Lucy",
+		"type":"Student",
+		"email":"xxxxxxxxxx@gmail.com",
+		"classes":[608,617,802]
+	},
+	{
+		"name":"Tony",
+		"type":"Student",
+		"email":"xxxxxxxxx@gmail.com",
+		"classes":[608,617,802]
+	},
+	{
+		"name":"Xinjia",
+		"type":"Student",
+		"email":"xxxxxxxxxxx@gmail.com",
+		"classes":[608,617,802]
+	},
+	{
+		"name":"Alice",
+		"type":"Professor",
+		"email":"xxxxxxxxxxx@gmail.com",
+		"classes":[608,617,802]
+	}
+]

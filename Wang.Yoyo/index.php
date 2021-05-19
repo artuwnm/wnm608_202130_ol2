@@ -1,3 +1,9 @@
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,6 @@
 <body>
 	
 	<?php include "parts/navbar.php"; ?>
-
-
 	
 		<h3>Nikon Camera</h3>
 
@@ -102,19 +106,38 @@
 
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-overlay">
-    		<img src="img/sony3.png" alt="media-image">
-    		<figcaption>
+    		    <img src="img/sony3.png" alt="media-image">
+    		    <figcaption>
     			<div class="caption-body">
     			<div>SONY ALPHA A7III FULL FRAME</div>
     			<div>$2199.99</div>
-    		</div>
-    		</figcaption>
-    	</figure>
+    		    </div>
+    		    </figcaption>
+    	        </figure>
     		</div>
     	</div>
     </div>    	
   </div>
 
 
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
