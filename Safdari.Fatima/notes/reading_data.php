@@ -1,6 +1,6 @@
 <?php
 
-include "../lib/php/functions.php";
+include_once "../lib/php/functions.php";
 
 $notes_object = file_get_json("notes.json");
 $users_array = file_get_json("../data/users.json");

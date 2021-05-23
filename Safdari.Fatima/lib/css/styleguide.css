@@ -80,6 +80,7 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 .flex-column { flex-direction:column; }
+.flex-wrap { flex-wrap:wrap; }
 
 
 
@@ -190,12 +191,16 @@ a:hover {
 	background-color: #E5C4C3;
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
+	
 	
     
 
 }
+
 .navbar img{
-	width: 4%;
+	width: 5%;
+	height: 60%;
 
 }
 
@@ -209,6 +214,9 @@ a:hover {
 
 .navbar a {
 	padding: 0 0.5em;
+}
+.flush>.navbar {
+	margin-bottom: 0;
 }
 
 /*CARD */
@@ -258,6 +266,10 @@ a:hover {
  	.card.flat {
  		padding: 0;
 
+ 	}
+ 	[class*='col-']>.card {
+ 		height: 100%;
+ 		margin: 0;
  	}
 
  	.view-window {

@@ -10,11 +10,7 @@ $empty_product = (object) [
 	"description"=>"It is a traditional pastry made with dates.",
 	"thumbnail"=>"kolompeh_1.jpg",
 	"images"=>"kolompeh.jpg"
-
 ];
-
-
-
 
 //LOGIC
 $conn = makePDOConn();
@@ -85,7 +81,6 @@ try {
 
 
 
-
 function productListItem($r,$o) {
 	return $r.<<<HTML
 	<div class="card soft">
@@ -135,7 +130,6 @@ function showProductPage($o) {
 </div>
 
 HTML;
-
 
 
 $form = <<<HTML
@@ -208,9 +202,6 @@ HTML;
 ?>
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -260,7 +251,7 @@ HTML;
 			
 			<?php 
 
-			$result = makeQuery(makeConn(),"SELECT * FROM `products`");
+			$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `date_create` DESC");
 
 			echo array_reduce($result,'productListItem');
 			?>

@@ -14,7 +14,7 @@ include_once "parts/templates.php";
 	<?php include "parts/meta.php"; ?>
   </head>   
 
-<body>
+<body class="flush">
     <?php include "parts/navbar.php"; ?>
 
 
@@ -31,31 +31,6 @@ include_once "parts/templates.php";
 
 
 <div class="container" id="tableofcontents">
-  <!--<h4><span>You Might Also Like</span></h4>
-     		<div class="grid gap">
-     			<div class="col-xs-12 col-md-4">
-     				<figure class="figure">
-     			<img src='img/Kumach.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=1">Kumach</a>
-                      <div>$12.99</div></li>
-     			</figcaption>
-     		</figure>
-     			</div>
-     			<div class="col-xs-12 col-md-4">
-     				<figure class="figure">
-     			<img src='img/Walnuts cookies.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=2">Walnuts Cookies</a>
-                      <div>$10.00</div></li></figcaption>
-     		</figure>
-     			</div>
-     			<div class="col-xs-12 col-md-4">
-     				<figure class="figure">
-     			<img src='img/pistachio cake.jpg' alt="">
-     			<figcaption><li><a href="product_item.php?id=3">Pistachio Cake</a></li>
-                    <div>$14.99</div></figcaption>
-     		</figure>
-     	</div>
-    	</div>-->
 
 </div>
 
@@ -93,10 +68,6 @@ include_once "parts/templates.php";
           <div>
 </div>
 </div>
-
-
-
-
                         
 </body>
 
