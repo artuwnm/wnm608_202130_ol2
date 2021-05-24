@@ -4,6 +4,7 @@ include_once "lib/php/functions.php";
 
 ?>
 
+<input type="checkbox" id="menu" class="hidden">
 <header class="navbar">
 		<div class="display-flex">
 
@@ -11,21 +12,23 @@ include_once "lib/php/functions.php";
 					<a href="index.php"> <h1 class="logo">TEA HOUSE</h1> </a>
 				</div>
 
-			<nav class="flex-none nav">
-				<ul class="container-row display-flex">
+				<div class="flex-none menu-button">
+					<label for="menu">&equiv;</label>
+				</div>
+
+			<nav class="nav nav-flex flex-none nav">
+				<ul>
 					<li> <a href="product_list.php">Shop Teas</a></li>
 					<li> <a href="learn.php">Learn</a></li>
 					<li> <a href="about.php">About</a></li>
-				</ul>
-			</nav>
-			
-			<div class="flex-none nav"></div>
-			
-			<div class="cart nav display-flex flex-align-center flex-justify-center"> 
-				<a href="product_cart.php"> 
+					<li class="cart nav display-flex flex-align-center flex-justify-center"><a href="product_cart.php"> 
 					<span><img src="img/cart.png"></span>
 					<span class="badge"><?= makeCartBadge(); ?></span>
-				</a>
+					</a></li>
+				</ul>
+			</nav>
+		
+
 			</div>
 		</div>
 </header>

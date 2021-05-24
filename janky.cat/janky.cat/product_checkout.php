@@ -1,4 +1,9 @@
-<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$cart_items = getCartItems();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -11,6 +16,28 @@
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-5">
+		<div class="card soft">
+
+			<h2>Order Summary</h2>
+			
+			<div class="card-section">
+				<?php
+
+				echo array_reduce($cart_items,function($r,$o){
+						$totalfixed = number_format($o->total,2,'.','');
+						return $r."<div class= 'display-flex'>
+							<div class='flex-stretch'>$o->name</div>
+							<div class='flex-none'>&dollar;$totalfixed</div>
+						</div>";
+				}) ?>
+				</div>
+				<?= cartTotals(); ?>
+				</div>
+			</div>
+
+	<div class="col-xs-12 col-md-7">
 		<div class="card soft">
 			<h2>Checkout</h2>
 			<form>
@@ -88,6 +115,11 @@
 				
 			<div class="form-control">
 			<a href="product_confirmation.php"><button type="button"class="form-button">Place Order</button></a>
+		</div>
+	</form>
+</div>
+</div>
+
 
 		</div>
 	</div>

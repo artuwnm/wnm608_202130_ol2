@@ -70,7 +70,8 @@ a:hover {
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
-.flex-column {flex-direction: column;}
+.flex-column {flex-direction: column; }
+.flex-wrap {flex-wrap:wrap; }
 
 
 /* COMPONENT CLASSES */
@@ -168,6 +169,7 @@ a:hover {
 	background-color: var(--color-neutral-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
 
@@ -213,6 +215,10 @@ a:hover {
 		padding: 0;
 	}
 
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
 
 .card-section{
 	padding:1em;

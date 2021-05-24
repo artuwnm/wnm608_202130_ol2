@@ -20,8 +20,15 @@ $cart_items = getCartItems();
 
 	<?php include "parts/navbar.php"; ?>
 
-	<div class="container">
+<div class="container">
 		<h2>In Your Cart</h2>
+
+		<?php
+
+		if(count($cart_items)) {
+			?>
+
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
@@ -34,6 +41,20 @@ $cart_items = getCartItems();
 				</div>
 			</div>
 		</div>
+		<?php
+	}else {
+		?>
+		<div class="card soft">
+			<p>Your Cart is Empty</p>
+		</div>
+		
+			<h3>Top Recommendations</h3>
+			<?php recommendedAnything(6); ?>
+		
+		<?php
+
+	}
+	?>
 	</div>
 
 <br>

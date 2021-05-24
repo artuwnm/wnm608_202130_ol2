@@ -71,7 +71,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -79,14 +79,37 @@ footer {
 	.navbar h1 {
 		padding-left: 0.5em;
 	}
+	
 }
+
+.menu-button label {
+	display: none;
+	}
 
 @media (max-width: 400px) {
 	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+
+	.navbar nav {
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul{
 		display: block;
 	}
 	.navbar .nav li {
 		line-height: 2em;
+	}
+
+	.menu-button label {
+	display: block;
+	padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
 	}
 }
 
@@ -109,7 +132,8 @@ footer {
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
-.flex-column {flex-direction: column;}
+.flex-column {flex-direction: column; }
+.flex-wrap {flex-wrap:wrap; }
 
 /* COMPONENT CLASSES */
 
@@ -166,6 +190,7 @@ footer {
 	background-color: var(--color-main-medium);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
 	.navbar a {
@@ -216,6 +241,11 @@ footer {
 		border-bottom: 1px solid var(--color-black);
 	}
 
+
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
 
 .card-section{
 	padding:1em;
@@ -381,7 +411,6 @@ footer {
 .form-item {
 	display: inline-block;
 	background-color: transparent;
-	border: .05em solid var(--color-black);
 	border-width: 0.1em;
 	padding: 0.5em, 1em;
 	font: inherit;
