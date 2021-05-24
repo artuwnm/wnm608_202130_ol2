@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -91,11 +92,20 @@ return $r."<img src='$o'>";
 
 			
 
-		
+<div class="card soft">
+	
+	 <h4><span>Recommended Products</span></h4>
+	<?php 
+	recommendedSimilar($product->category,$product->id);
+
+	 ?>	
+</div>	
 
 	</div>
 
 </div>
+
+
 
 <div class="container">
 	<article id="article4" class="article">

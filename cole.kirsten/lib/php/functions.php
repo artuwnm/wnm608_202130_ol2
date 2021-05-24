@@ -2,14 +2,17 @@
 
 session_start();
 
-	function print_p($v) {
-		echo "<pre>",print_r($v),"</pre>";
-	}
+function print_p($v) {
+	echo "<pre>",print_r($v),"</pre>";
+}
+
+
 
 function file_get_json($filename) {
 	$file = file_get_contents($filename);
 	return json_decode($file);
 }
+
 
 include_once "auth.php";
 function makeConn() {
@@ -19,6 +22,15 @@ function makeConn() {
 	return $conn;
 }
 
+
+function makePDOConn() {
+	try {
+		$conn = new PDO(...PDOAuth());
+	} catch(PDOException $e) {
+		die($e->getMessage());
+	}
+	return $conn;
+}
 
 
 
@@ -34,39 +46,41 @@ function makeQuery($conn,$qry) {
 
 
 
-/* CART FUNCTIONS */
 
 function array_find($array,$fn) {
-		foreach($array as $o) if($fn($o)) return $o;
-		return false;
+	foreach($array as $o) if($fn($o)) return $o;
+	return false;
 }
 
 function getCart() {
 	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 }
 
+
 function addToCart($id,$amount,$color) {
 	$cart = getCart();
 
 	$p = array_find($cart,function($o) use($id) { return $o->id==$id; });
 
+
 	if($p) {
 		$p->amount += $amount;
 	} else {
 		$_SESSION['cart'][] = (object)[
-		"id"=>$id,
-		"amount"=>$amount,
-		"color"=>$color
+			"id"=>$id,
+			"amount"=>$amount,
+			"color"=>$color
 		];
 	}
 }
 
-function resetCart() { $_SESSION['cart'] = []; } 
+function resetCart() { $_SESSION['cart'] = []; }
 
 
 function cartItemById($id) {
 	return array_find(getCart(),function($o)use($id){return $o->id==$id;});
 }
+
 
 function makeCartBadge() {
 	$cart = getCart();
@@ -74,11 +88,12 @@ function makeCartBadge() {
 		return "";
 	} else {
 		return array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
+
 	}
+
 }
 
-
-function getCartItems () {
+function getCartItems() {
 	$cart = getCart();
 
 	if(empty($cart)) return [];
@@ -93,4 +108,5 @@ function getCartItems () {
 		return $o;
 	},$data);
 }
+
 

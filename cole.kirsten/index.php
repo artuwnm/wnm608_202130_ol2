@@ -20,34 +20,29 @@
 	</div>
 
 
-	<div class="container">
-		<div class="card soft">
-			<h2>Shop</h2> 
+<div class="container">
+	<div class="card soft">
+		<h2>Freshest Fish in LA County!</h2>
 
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			
-			<?php
-
-
-
-			$result = makeQuery(
-				makeConn(),
-				"
-				SELECT *
-				FROM `products`
-				ORDER BY `date_create` DESC
-				LIMIT 3
-				"
-			);
-
-
-			echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
-
-			?>
-
-
-		</div>
+		<p>We serve the finest seafood here at San Marino Seafood in San Marino, CA.  Our menu offers fresh fish sourced sustainably primarily off the coast of California.  We are located west of Highway 164 at the corner of Huntington Drive and San Marino Avenue.  We're not far from San Gabriel Country Club.  Order online for nationwide delivery!</p>
 	</div>
+
+	<div class="container">
+    <h4><span>Latest Fish</span></h4>
+ <?php
+
+      recommendedCategory("fish");
+
+    ?>
+        <h4><span>Latest Shellfish</span></h4>
+  <?php
+
+      recommendedCategory("shellfish");
+
+    ?>
+</div>
+	
+</div>
 
 	<!-- viewport -->
 	<div class="view-window" style="background-image: url('img/crabs.jpg')">

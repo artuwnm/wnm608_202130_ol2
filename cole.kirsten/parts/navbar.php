@@ -3,12 +3,16 @@
 include_once "lib/php/functions.php";
 
 ?>
+<input type="checkbox" id="menu" class="hidden" >
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
 				<img src="img/logo3.jpg" alt="San Marino Seafood Logo" width="auto" height="160">
 			</div>
 			<div class="flex-stretch"></div>
+			<div class="flex-none menu-button">
+				<label for="menu">&equiv;</label>
+			</div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
 					<!-- li*3>a[href=#]>{Link $} -->
@@ -20,13 +24,6 @@ include_once "lib/php/functions.php";
 						<span class="badge"><?= makeCartBadge(); ?></span> 
 					</a></li>
 				</ul>
-				<div class="search">
-					<div class="form-control">
-						<form>
-						<input type="search" class="hotdog" placeholder="search">
-						</form>
-					</div>
-				</div>
 			</nav>
 		</div>
 	</header>
