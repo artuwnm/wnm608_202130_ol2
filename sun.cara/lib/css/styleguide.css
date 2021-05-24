@@ -101,6 +101,14 @@ a:hover {
  justify-content: center;
 }
 
+.flex-colum {
+	flex-direction: column;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
 
 /* Small Classes */
 .media-image{
@@ -170,9 +178,17 @@ a:hover {
 
 
 .navbar {
- background-color: var(--color-main-dark);
- color: var(--color-white);
- line-height: var(--header-height);
+ 	background-color: var(--color-main-dark);
+ 	color: var(--color-white);
+ 	line-height: var(--header-height);
+ 	margin-bottom: 1em;
+
+
+}
+
+
+.flush>.navbar{
+	margin-bottom: 0;
 }
 
 
@@ -364,7 +380,7 @@ a:hover {
 }
 
 .hotdog.light{
-	background-color: var(--color-white);
+	background-color: var(--color-neutral-light);
 	color: var(--color-black);
 }
 
@@ -428,4 +444,7 @@ a:hover {
 
 
 
-
+[class*='col-']>.card{
+	height: 100%;
+	margin: 0;
+}

@@ -15,7 +15,7 @@
 		<div class="card soft">
 			<h2>Product On Sale Item</h2>
 
-			<p>This is item # <?= $_GET['id'] ?></p>
+			<p>Currently there is no items on sale <?= $_GET['id'] ?></p>
 
 			
 

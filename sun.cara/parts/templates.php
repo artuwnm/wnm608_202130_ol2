@@ -37,7 +37,7 @@ $selectAmount = selectAmount($o->amount,10);
 return $r. <<<HTML
 <div class="display-flex">
 	<div class="flex-none images-thumbs">
-		<img src="$o->thumbnail">
+		<img src="img/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->name</strong>

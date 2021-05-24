@@ -88,7 +88,7 @@ function productListItem($r,$o) {
 return $r.<<<HTML
 <div class="card soft">
 	<div class="display-flex">
-		<div class="flex-none images-thumbs"><img src='$o->thumbnail'></div>
+		<div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
 		<div class="flex-stretch" style="padding:1em">$o->name</div>
 		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
 	</div>
@@ -106,6 +106,13 @@ $id = $_GET['id'];
 $addoredit = $id =="new" ? "Add" : "Edit";
 $createorupdate = $id =="new" ? "create" : "update";
 $images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='$o'>";});
+
+
+$images_arr = explode(",", $o->images);
+$other_image_html = '';
+for ($i=0; $i < count($images_arr) ; $i++) {
+    $other_image_html = $other_image_html . '<img src="img/' .  trim($images_arr[$i]) .'" />';
+}
 
 // heredoc
 
@@ -126,11 +133,11 @@ $display = <<<HTML
 	</div>
 	<div class="form-control">
     	<label class="form-label">Thumbnail</label>
-    	<span class="images-thumbs"><img src="$o->thumbnail"></span>
+    	<span class="images-thumbs"><img src="img/$o->thumbnail"></span>
 	</div>
 	<div class="form-control">
     	<label class="form-label">Other Images</label>
-    	<span class="images-thumbs"><img src="$o->images"></span>
+    	<span class="images-thumbs">$other_image_html</span>
 	</div>
 </div>
 HTML;
