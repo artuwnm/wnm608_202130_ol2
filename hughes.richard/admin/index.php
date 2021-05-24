@@ -2,6 +2,7 @@
 <?php 
 
 include "../lib/php/functions.php";
+include "../parts/templates.php";
 
 $empty_product = (object)[
 "product_name"=>"Traxxas Stampede RC Truck",
@@ -16,6 +17,7 @@ $empty_product = (object)[
 
 
 //LOGIC
+
 
 try {
 	$conn = makePDOConn();
@@ -33,7 +35,7 @@ try {
 					`thumbnail`=?,
 					`images`=?,
 					`date_modify`=NOW()
-				WHERE `id` =?
+				WHERE `id`=?
 				");
 			
 			$statement->execute([
@@ -75,22 +77,27 @@ try {
 			 	$_POST['product-images']
 			]);
 			$id = $conn->lastInsertId();
+
 			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
+
 		case "delete":
 		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
 		$statement->execute([$_GET['id']]);
+
 			header("location:{$_SERVER['PHP_SELF']}");
 			break;
 	}
+
 } catch(PDOException $e) {
 	die($e->getMessage());
 }
 
 
+
 // TEMPLATES
 
-function productListItem ($r,$o){
+function productListItem($r,$o){
 return $r.<<<HTML
 <div class="card soft">
 	<div class="display-flex">
@@ -109,7 +116,9 @@ function showProductPage($o) {
 $id = $_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
 $createorupdate = $id == "new" ? "create" : "update";
-$images = array_reduce(explode(",", $o->images), function($r,$o){return $r. "<img src='images/$o'>";});
+$images = array_reduce(explode(",", $o->images), function($r,$o){
+	return $r."<img src='images/$o'>";
+});
 
 $display = <<<HTML
 <div>
@@ -181,11 +190,11 @@ $form = <<<HTML
 			</div>
 
 			
-		</form>
-
 			<div class="form-control">
 				<input type="submit" class="form-button" value="Save Changes">
 			</div>
+		</form>
+
 HTML;
 
 
@@ -205,10 +214,12 @@ $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=del
 
 
 echo <<<HTML
-<div class='card soft'><nav class="display-flex">
+<div class='card soft'>
+<nav class="display-flex">
 	<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
 	<div class="flex-none">$delete</div>
-</nav></div>
+</nav>
+</div>
 $output
 HTML;
 }
@@ -226,7 +237,7 @@ HTML;
 
 <body>
 	<header class="navbar">
-		<div class="contaier display-flex">
+		<div class="container display-flex">
 			<div class="flex-none">
 				<h1>Product Admin</h1>
 			</div>

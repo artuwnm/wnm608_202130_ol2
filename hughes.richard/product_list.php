@@ -7,13 +7,11 @@ include_once "parts/templates.php";
 <head>
 	<meta charset="UTF-8">
 
-<title>Product List</title>
+	<title>Product List</title>
 
-<?php include "parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
-<script src="lib/js/functions.js"></script>
-<script src="js/templates.js"></script>
-<script src="js/product_list.js"></script>
+	<script src="js/product_list.js"></script>
 
 </head>
 <body>
@@ -31,9 +29,8 @@ include_once "parts/templates.php";
 
 		<div class="form-control">
 			<div class="card soft">
-				<div class="display-flex">
-					<div class="flex-stretch display-flex">
-			
+				<div class="display-flex flex-justify-space-evenly flex-wrap">
+						<div class="display-flex">
 							<div class="flex-none">
 									<button data-filter="category" data-value= "" type="button" class="form-button">ALL</button>
 							</div>
@@ -41,6 +38,7 @@ include_once "parts/templates.php";
 							<div class="flex-none">
 									<button data-filter="category" data-value='Ephemera' type="button" class="form-button">Ephemera</button>
 							</div>
+							
 			
 							<div class="flex-none">
 									<button data-filter="category" data-value="Sporting" type="button" class="form-button">Sporting Goods</button>
@@ -49,18 +47,20 @@ include_once "parts/templates.php";
 							<div class="flex-none">
 									<button data-filter="category" data-value="Home" type="button" class="form-button">Home</button>
 							</div>
-					</div>
-					<div class="flex-none">
-						<div class="form-select" >
-							<select class="js-sort">
-								<option value="1">Newest</option>
-								<option value="2">Oldest</option>
-								<option value="3">Least Expensive</option>
-								<option value="4">Most Expensive</option>
-							
-							</select>
 						</div>
-					</div>
+
+
+						<div class="flex-none">
+							<div class="form-select" >
+								<select class="js-sort">
+									<option value="1">Newest</option>
+									<option value="2">Oldest</option>
+									<option value="3">Least Expensive</option>
+									<option value="4">Most Expensive</option>
+								</select>
+							</div>
+						</div>
+
 				</div>
 			</div>
 		</div>

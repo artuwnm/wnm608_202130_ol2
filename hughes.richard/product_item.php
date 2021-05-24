@@ -69,7 +69,7 @@
 							</div>
 					</div>
 
-				<div class="form-control">
+				<!-- <div class="form-control">
 					<label for="product-color" class="form-label">Color</label>
 						<div class="form-select" >
 							<select id="product-color" name="product-color">
@@ -78,7 +78,7 @@
 								<option>blue</option>
 							</select>
 						</div>
-				</div>
+				</div> -->
 			</div>
 
 				<div class="card-section">
