@@ -1,8 +1,10 @@
 	<?php 
+
 	include_once "lib/php/functions.php";
 
 
 	 ?>
+	 
 	 <input type="checkbox" id="menu" class="hidden">
 	<header class="navbar">
 

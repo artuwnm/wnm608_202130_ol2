@@ -19,9 +19,22 @@
 
 		<p>At Sweet Offer we want to share with you our passion for Iranian pastries, the art of incomparable quality and taste.</p>
 		</div>
+		<div class="container"> 
+			<h4><span>Subscribe to our Sweet Newsletter!</span></h4>
+          <div class="grid gap">
+               <div class="col-xs-12 col-md-6">
+                    <div class="card soft">
+                         <input type="Text" class="form-input" name="user-classes" id="user" placeholder="Enter Email Address" value="">
+                    </div>
+               </div>
+               <div class="col-xs-12 col-md-6">
+                    <div class="card hard">
+                         <input class="form-button" type="submit" value="Subscribe">
+                    </div>
+                </div>
 	</div>
 	
-	<?php include "parts/footer.php"; ?>
+	
 </body>
 
 </html>

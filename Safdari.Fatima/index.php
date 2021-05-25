@@ -65,7 +65,7 @@ include_once "parts/templates.php";
                          <input class="form-button" type="submit" value="Subscribe">
                     </div>
                 </div>
-          <div>
+         
 </div>
 </div>
                         
