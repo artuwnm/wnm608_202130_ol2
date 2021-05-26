@@ -124,10 +124,7 @@ echo <<<HTML
 $output
 HTML;
 }
-
-
-
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
