@@ -1,0 +1,33 @@
+[
+
+	{
+
+		"name":"Fatemeh Safdari",
+		"type":"Student",
+		"email":"fatemarc.s@gmail.com",
+		"classes":[608]
+	},
+	{
+
+		"name":"Sahar Salehi",
+		"type":"Student",
+		"email":"saharsalehi@gmail.com",
+		"classes":[608]
+	},
+	{
+
+		"name":"Fara Mir",
+		"type":"Teacher",
+		"email":"faramir@gmail.com",
+		"classes":[608]
+	
+	},
+	{
+
+		"name":"Ava Fard",
+		"type":"Architect",
+		"email":"avafard@gmail.com",
+		"classes":[608]
+
+}
+]
