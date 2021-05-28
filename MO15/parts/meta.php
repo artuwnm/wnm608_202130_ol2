@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width">
-<base href="http://pyuanyuan.com/MO14/">
+<base href="http://pyuanyuan.com/MO15/">
 
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
