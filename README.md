@@ -3,4 +3,6 @@
 ## Relevant Links
 
 - https://pyuanyuan.com
-- https://pyuanyuan.com/aau/MO4/wnm608_202130_ol2/index.html
+- http://pyuanyuan.com/MO15/product_list.php
+- http://pyuanyuan.com/MO15/styleguide
+- http://pyuanyuan.com/MO15/admin
