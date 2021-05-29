@@ -1,0 +1,76 @@
+
+
+:root {
+	--color-offwhite: #f4f4f4;
+}
+
+body {
+	background-color: var(--color-offwhite);
+}
+
+h4 {
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16pt;
+}
+
+h1 {
+	font-family: alegreya-sans-sc, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 32pt;
+}
+
+h2 {
+	font-family: alegreya-sans-sc, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24pt;
+}
+
+h3 {
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 24pt;
+}
+
+h5 {
+	font-family: alegreya-sans, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16pt;
+}
+
+p {
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16pt;
+}
+
+.image-row {
+  display: flex;
+}
+
+.juice1 {
+  width: 25%
+}
+
+.juice2 {
+  width: 50%
+}
+
+.juice3 {
+  width: 25%
+}
+
+.text-center {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 5px,
+}
