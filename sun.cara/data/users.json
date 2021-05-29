@@ -1,0 +1,33 @@
+[
+	{
+		"name":"Cara",
+		"type":"Student",
+		"email":"sunyiwei0824@gmail.com",
+		"classes":[415,617,4892]
+	},
+	{
+		"name":"Nathan",
+		"type":"Teacher",
+		"email":"sunyiwei0824@gmail.com",
+		"classes":[415,617,4892]
+	},
+	{
+		"name":"Tony",
+		"type":"Student",
+		"email":"sunyiwei0824@gmail.com",
+		"classes":[415,617,4892]
+	},
+	{
+		"name":"Yiwei",
+		"type":"Student",
+		"email":"sunyiwei0824@gmail.com",
+		"classes":[415,617,4892]
+	},
+	{
+		"name":"Steven",
+		"type":"Faculty",
+		"email":"sunyiwei0824@gmail.com",
+		"classes":[415,617,4892]
+	}
+]
+

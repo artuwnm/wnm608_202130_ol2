@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Styleguide</title>
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+    <link rel="stylesheet" href="../css/storetheme.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+		       <h1>Bentley & Skinner Jewellery Style Guide</h1>
+	        </div>
+
+	        <div class="flex-stretch"></div>
+		    <nav class="flex-none nav">
+		        <ul class="container display-flex">
+			        <li><a href="#tableofcontents">Table of Contents</a></li>			
+		</ul>
+	</nav>
+	</header>
+
+
+
+
+
+
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+		<div class="soft card">
+<nav class="nav">
+			<ul>
+				<li><a href="#typography">Typography</a></li>
+				<ul>
+			
+					<li><a href="#paragraphs">Statement of Intent</a></li>
+				</ul>
+
+				<li><a href="#cards">Checkingout Layout Cards</a></li>
+				
+				<li><a href="#navigations">Navigations</a></li>
+				<li><a href="#table">Tables</a></li>
+				<li><a href="#figure">Figures</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<ul>
+					<li><a href="#inputs">Inputs</a></li>
+					<li><a href="#labels">Labels</a></li>
+					<li><a href="#controls">Controls</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+				</ul>
+
+
+			</ul>
+		</nav>
+		</div>
+		
+	</div>
+	
+			
+
+<div class="container">
+	<h2>Statement of Intent</h2>
+<div class="card soft">
+
+
+			<p>Reasons for creating this e-commerce website:
+	When customers are shopping in a jewelry store that has many jewelry displays, they are surrounded by hundreds of other designs all dazzling them at the same time. It can be hard to pick out the right thing from a large selection. Taking that process online, consumers are presented with a curated selection of pieces tailored to their budget and style preferences — all in a few clicks. 
+
+Also, compared to a physical store, there are some benefits that a jewelry shopping website has:
+ </p>
+			<p>1. Convenient: People are busy these days, many shoppers have to take many jobs, so there is no time for them to shop in a physical store. But they can shop 24/7 on a jewelry website, there is no time limitation.
+</p>
+			<p>2. Variety: As a high jewelry company, it is almost impossible to put all your jewelry collections on display, however, customers can browse all product pictures you have on a website.
+Price comparison: Comparing and researching products and their prices is so much easier online, shoppers don’t have to ask representatives one by one.
+
+</p>
+            <p>3. Save company budges: Customers moving online means there is no need to hire too many salespeople in the store, which helps your jewelry company save on salary budgets. 
+
+</p>
+            <p>2. Variety: As a high jewelry company, it is almost impossible to put all your jewelry collections on display, however, customers can browse all product pictures you have on a website.
+Price comparison: Comparing and researching products and their prices is so much easier online, shoppers don’t have to ask representatives one by one.
+
+</p>
+            <p>4. No crowds: Most shoppers don’t like crowds when they shop. Especially during festivals or special events, they can be such a huge headache. Also, it tends to be more chaotic when there are more crowds out and this sometimes makes people feel rush or hurried. All these problems can be avoided when people shopping online.
+
+</p>
+				
+			</div>
+		</div>
+
+<div class="container" id="typography">
+		<h2>Typography</h2>
+
+		
+			<div class="card soft" id="headings">
+				
+				<h1>Heading 1-----Minion Variable Concept Bold-----17pt
+</h1>
+
+				<h1>Nav bar-----Minion Variable Concept Bold-----17pt
+</h1>
+				<h2>Heading 2-----Minion Variable Concept Bold-----15pt
+</h2>
+				<h3>Body text-----Minion Variable Concept Regular-----12pt</h3>
+			</div>
+
+
+
+
+
+
+
+
+<div class="container">
+		<h2>Navigation</h2>
+
+		<script>
+			const makeNav =(classes='')=>{
+				const links = ['home','store','about'];
+				let ran = Math.floor(Math.random()*links.length);
+				document.write(
+					<div>
+					<nav class="${classes}">
+					<ul> ${links.reduce((r,o,i)=>{
+					return r+<li><a href="#">${o}</a></li>;
+				}'')}
+				</ul>
+				</nav>
+				</div>
+				');
+			}
+		</script>
+
+
+
+
+
+
+
+
+		<div class="card soft">
+			<h3>Jewelry Categories Nav</h3>
+
+			<script>makeNav('nav nav-flex')</script>
+			<nav class="nav">
+				<ul>
+					<li><a href="#">Bracelet</a></li>
+					<li><a href="#">Necklace</a></li>
+					<li><a href="#">Earrings</a></li>
+					<li><a href="#">Rings</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+<div class="container">
+	<div class="card soft">
+			<h3>Home Page Nav</h3>
+			<script>makeNav('nav nav-flex')</script>
+			<nav class="nav nav-flex">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">On Sale</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+<div class="container">
+	<div class="card soft">
+			<h3>Nav Crumbs</h3>
+			<script>makeNav('nav nav-crumbs')</script>
+			<nav class="nav nav-crumbs">
+				<ul>
+					<li><a href="#">Page1</a></li>
+					<li><a href="#">Page2</a></li>
+					<li><a href="#">Page3</a></li>
+					<li><a href="#">Page4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+
+
+<script>
+      const makeTable = (classes='') => {
+       const head = ['Number','Item', 'Description', 'Qt', 'Price'];
+       const body = [
+       ['Ring', "#100", '1', '$1000'],
+       ['Ring', "#101", '1', '$1000'],
+       ['Necklace', "#105", '1', '$2000'],
+       ['Necklace', "#107", '1', '$2000'],
+       ['Earrings', "#200", '1', '$3000'],
+       ];
+       // let ran = Math.floor(Math.random()*links.length);
+       document.write(`
+       <table class="${classes}">
+         <thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+         <tbody>${body.reduce((r,o,i)=>r+
+         `<tr>${
+          [i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+         }</tr>`,'')
+       }</tbody>
+       </table>
+       
+       `);
+      }
+     </script>
+<div class="container">
+	<h2>Tables</h2>
+
+
+	<div class="card soft">
+		<h3>Basic Table</h3>
+
+	<script>makeTable("table")</script>
+</div>
+
+
+
+
+
+<h2 id="figures">Figures</h2>
+<div class="card">
+<h3>Single Product Image</h3>
+
+<div class="figure">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>Product</figcaption>
+    </figure>
+
+</div>
+
+    <h3>Overall Product Page</h3>
+
+   <div class="grid gap">
+    	<div class=".col-xs-12. col-md-4">
+    		<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+    </div>
+
+
+
+
+
+  
+
+   <div class="grid gap">
+    	<div class=".col-xs-12. col-md-4">
+    		<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+    </div>
+
+
+
+
+   <div class="grid gap">
+    	<div class=".col-xs-12. col-md-4">
+    		<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+
+    <div class=".col-xs-12. col-md-4">
+    	<figure class="figure product">
+	<img src="http://via.placeholder.com/400x400?text=product" alt="">
+	<figcaption>
+		<div>Product Name</div>
+		<div>$880</div>
+	</figcaption>
+    </figure>
+    		
+    </div>
+    </div>
+</div>
+
+    <div class="container">
+	<h2>Checkingout Layout Cards</h2>
+	<div class="soft card">
+
+	<div class="grid gap">
+		<div class="col-xs-12 col-md-4">
+			<div class="card">First Name</div>
+			</div>
+
+		<div class="col-xs-12 col-md-4">
+			<div class="card">Middle Name</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="card">Last Name</div>
+			</div>
+
+		<div class="col-xs-12 col-md-4">
+			<div class="card">Card Number</div>
+			</div>
+
+		<div class="col-xs-12 col-md-4">
+			<div class="card">Expire Date</div>
+			</div>
+
+
+		<div class="col-xs-12 col-md-4">
+			<div class="card">CVV</div>
+			</div>
+
+		
+</div>
+	
+
+
+
+</div>
+
+<div class="container" id="forms">
+	<h2>Forms</h2>
+
+	<h3>Inputs</h3>
+
+	<div class="card soft">
+		<h3>Default Inputs</h3>
+		<form>
+			<input type="text"><br>
+			<input type="number"><br>
+			<input type="passward"><br>
+			<input type="url"><br>
+			<input type="email"><br>
+			<input type="datetime-local"><br>
+			
+			
+			
+		</form>
+
+		<h3>Form Input</h3>
+		<form>
+			<input type="text" placeholder="Text" class="form-input">
+			<input type="number" placeholder="Number" class="form-input">
+			<input type="password" placeholder="Password" class="form-input">
+			<input type="search" placeholder="Search" class="form-input">
+		</form>
+
+		<h3>Form Label</h3>
+		<form>
+			<label class="form-label">Example</label>
+			<input type="text" placeholder="Text" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="number" placeholder="Number" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="password" placeholder="Password" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="search" placeholder="Search" class="form-input">
+		</form>
+
+<h3>Form Control</h3>
+<form>
+	<div class="form-control">
+		<label class="form-label">Example</label>
+		<input type="text" placeholder="Text" name="form-input">
+	</div>
+
+	<div class="form-control">
+		<label class="form-label">Example</label>
+		<input type="number" placeholder="Number" name="form-input">
+	</div>
+
+	<div class="form-control">
+		<label class="form-label">Example</label>
+		<input type="password" placeholder="Password" name="form-input">
+	</div>
+
+	<div class="form-control display-flex flex-align-center">
+		<div class="flex-none">
+			<label class="form-label">Example</label>
+		</div>
+
+    <div class="flex-stretch">
+		<input type="search" placeholder="Search" name="form-input">
+	</div>
+    <div class="flex-none">
+		<label class="form-label">Example</label>
+	</div>
+	<div class="flex-stretch">
+		<input type="search" placeholder="Search" name="form-input">
+	</div>
+		
+	</div>
+</form>
+
+<h3>Buttons</h3>
+<div class="card soft"></div>
+<h3>Default Buttons</h3>
+<button>Button</button>
+
+<h3>Form Buttons</h3>
+<div class="form-control">
+<button type="button" class="form-button">Button</button>
+</div>
+
+<div class="form-control">
+<input type="button" class="form-button" value="Input">
+</div>
+
+<div class="form-control">
+<a href="#" class="form-button">Anchor</a>
+</div>
+
+<h2>Hotdog</h2>
+<div class="card soft">
+	<div class="form-control">
+		<form>
+			<input type="search" class="hotdog" placeholder="search">
+		</form>
+</div>
+
+<div class="form-control">
+		<form>
+			<input type="search" class="hotdog dark" placeholder="search">
+		</form>
+</div>
+
+<div class="form-control">
+		<form class="card dark">
+			<input type="search" class="hotdog light" placeholder="search">
+		</form>
+</div>
+
+<div class="form-control">
+		<form>
+			<input type="search" class="hotdog" placeholder="search">
+		</form>
+</div>
+<div class="form-control">	
+		<form class="hotdog">
+			<span>&equiv;</span>
+			<input type="search" placeholder="search">
+		</form>
+
+	</div>
+
+	</div>
+
+
+<h2 id="select">Select</h2>
+<div class="card soft">
+	<div class="form-select">
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+</div>
+
+<div class="display-flex">
+<div class="flex-stretch"></div>
+<div class="flex-none">
+	<div class="form-select">
+		<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+	</div>
+</div>
+
+	</div>
+
+
+<h2 id="checkboxes">Check Boxes</h2>
+
+<div class="card soft">	
+<label>	Label</label><input type="checkbox" id="input-1"> </label>
+
+<label for="input-1">Label</label>
+
+<h3>Heart Checkbox</h3>
+<div class="favorite">
+	<input type="checkbox" id="heart-example" class="hidden">
+	<label for="heart-example">&hearts;</label>
+</div>
+
+
+<h3>Toggle</h3>
+<div class="toggle">
+	<input type="checkbox" id="toggle-1" class="hidden">
+	<label for="toggle-1"></label>
+</div>
+
+<div class="toggle">
+	<input type="checkbox" id="toggle-2" class="hidden">
+	<label for="toggle-2"></label>
+</div>
+</div>
+
+</div>
+</body>
+</html>
