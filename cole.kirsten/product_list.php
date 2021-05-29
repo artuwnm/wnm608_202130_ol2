@@ -21,7 +21,7 @@
 	<?php include "parts/navbar.php"; ?>
 
 		<!-- viewport -->
-	<div class="view-window" style="background-image: url('img/market.jpg')">
+	<div class="view-window" style="background-image: url('img/market2.jpg')">
 	</div>
 
   <div class="container">

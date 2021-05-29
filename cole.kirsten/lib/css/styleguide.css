@@ -6,9 +6,9 @@
 }
 
 :root {
-	--color-neutral-light:#D6D6D6;
-	--color-neutral-medium:#B7B2B2;
-	--color-neutral-dark:#6C6565;	
+	--color-neutral-light: #D6D6D6;
+	--color-neutral-medium: #B7B2B2;
+	--color-neutral-dark: #6C6565;	
 
 	--color-main-light: #5AC1D9;
     --color-main-medium: #4191CF;
@@ -18,12 +18,11 @@
     --color-sub-medium: #ED2725;
     --color-sub-dark: #BF2026;
 
-	--color-black:#000;
-	--color-white:#fff;	
+	--color-black: #000;
+	--color-white: #fff;	
 
-	--header-height:3rem;
-	--spacing:1rem;
-
+	--header-height: 3rem;
+	--spacing: 1rem;
 
 
 	--font-serif: ltc-bodoni-175, "Times New Roman", serif;
@@ -64,6 +63,7 @@ a:hover {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-bottom: 1em;
 }
 
 
@@ -85,7 +85,7 @@ a:hover {
 
 /* Navbar collapsing for mobile, and adding spacing between containers for mobile */
 
-/*  @media (max-width: 800px) {
+@media (max-width: 800px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -95,12 +95,28 @@ a:hover {
 	}
 }
 
+.menu-button label { display:none; }
 @media (max-width: 400px) {
 	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width:100%;
+		display:none;
+	}
+	.navbar .nav-flex ul {
 		display: block;
 	}
 	.navbar .nav li {
 		line-height: 2em;
+	}
+	.menu-button label {
+		display: block;
+		padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display:block;
 	}
 }
 
