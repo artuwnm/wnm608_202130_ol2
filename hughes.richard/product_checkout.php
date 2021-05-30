@@ -21,14 +21,14 @@ $cart = getCartItems();
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-5">
 					<div class="card soft">
-						<h2>Review Order</h2>
+						<h1>Review Order</h1>
 						<div class="div class card-section">
 							
 							<?php 
 							echo array_reduce($cart,function($r,$o){
 								$totalfixed = number_format($o->total,2,'.','');
 								return $r."<div class='display-flex'>
-									<div class='flex-stretch'>$o->product_name</div>
+									<div class='flex-stretch' style= 'font-weight: bold; color: var(--color-neutral-medium);'>$o->product_name</div>
 									<div class='flex-none'>&dollar;$totalfixed</div>	
 								</div>";
 								}) ?>

@@ -13,11 +13,22 @@ include_once "parts/templates.php";
 
 	<script src="js/product_list.js"></script>
 
+	<style>
+		body {
+  		background-image: url('images/cement.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+		}
+	</style>
+
 </head>
 <body>
 	
+	
 	<?php include "parts/navbar.php"; ?>
 
+	
 	<div class="container">
 		<h2>Product List</h2>
 		
@@ -28,9 +39,9 @@ include_once "parts/templates.php";
 		</div>
 
 		<div class="form-control">
-			<div class="card soft">
-				<div class="display-flex flex-justify-space-evenly flex-wrap">
-						<div class="display-flex">
+			<div class="card soft dark">
+				<div class="display-flex flex-justify-space-between flex-wrap" >
+						<div class="display-flex flex-justify-space-between flex-wrap" id="filter_buttons">
 							<div class="flex-none">
 									<button data-filter="category" data-value= "" type="button" class="form-button">ALL</button>
 							</div>
@@ -49,7 +60,7 @@ include_once "parts/templates.php";
 							</div>
 						</div>
 
-
+					
 						<div class="flex-none">
 							<div class="form-select" >
 								<select class="js-sort">
@@ -60,13 +71,15 @@ include_once "parts/templates.php";
 								</select>
 							</div>
 						</div>
+					
 
 				</div>
 			</div>
 		</div>
 
 		<div class='productlist grid gap'></div>
-</div>
+	</div>
+
 
 
 </body>

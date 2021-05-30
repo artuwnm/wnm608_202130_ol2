@@ -9,22 +9,34 @@
 	<title>GARAGE SALE HOME</title>
 
 	<?php include "parts/meta.php";?>
+	<style>
+		body {
+  		background-image: url('images/cement.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+		}
+	</style>
 
 
 </head>
 <body class="flush">
 
-	<?php include "parts/navbar.php"; ?>
-	
-		<div class="view-window" style="background-image: url(images/AdobeStock_97070867_small.jpg); ">
-			
 
-		</div>
+	<?php include "parts/navbar.php"; ?>
+
+	
+		<div class="view-window" style="background-image: url(images/garage_crop.jpg); ">
+			<div id="headline">GARAGE SALE</div>
+			 </div>
+
+			
 
 
 <div class="container">
-	
-	<h2>Recommended Products</h2>
+	<div class="card soft dark">
+		<h1 style="text-align: center;">RECOMMENDED PRODUCTS</h1>
+	</div>
 
 	
 </div>

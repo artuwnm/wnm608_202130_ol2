@@ -239,7 +239,7 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Product Admin</h1>
+				<h1>GARAGE SALE (admin)</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
