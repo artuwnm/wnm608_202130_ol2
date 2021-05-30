@@ -17,6 +17,16 @@ $cart_items = getCartItems();
 
 	<?php include "parts/meta.php";?>
 
+<style>
+		body {
+  		background-image: url('images/cement.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+		}
+	</style>
+
+
 </head>
 <body>
 

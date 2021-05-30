@@ -17,6 +17,16 @@
 		<title>Product Item</title>
 		<?php include "parts/meta.php"; ?>
 		<script src="js/product_thumbs.js"></script>
+
+		<style>
+		body {
+  		background-image: url('images/cement.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+		}
+	</style>
+	
 	</head>
 
 

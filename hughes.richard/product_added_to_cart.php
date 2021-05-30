@@ -16,12 +16,14 @@ $cart_product = cartItemById($_GET['id']);
 	<?php include "parts/meta.php";?>
 
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style>
+		body {
+  		background-image: url('images/cement.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+		}
+	</style>
 
 </head>
 <body>
