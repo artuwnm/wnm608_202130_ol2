@@ -47,26 +47,14 @@ $image_elements = array_reduce($images,function($r,$o){
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
 						<p><?= $product->description?></p>
-						<p><?= $product->origin?></p>
-						<p><?= $product->flavors?></p>
-						<div class="product-category"><?= $product->category ?></div>
+						
 						<div class="product-price">&dollar;<?= $product->price ?></div>
 					</div>
 
 					<div class="card-section">
 
 						<div class="form-control">
-							<label for="product-color" class="form-label">Box Size</label>
-							<div class="form-select">
-								<select id="product-color" name="product-color">
-									<option>12 tea bags</option>
-									<option>24 tea bags</option>									
-								</select>
-							</div>
-						</div>
-
-						<div class="form-control">
-							<label for="product-amount" class="form-label">Number of Boxes</label>
+							<label for="product-amount" class="form-label"> <p>Number of Boxes</p> <p>(Each box comes with 12 loose leaf tea bags.)</p></label>
 							<div class="form-select">
 								<select id="product-amount" name="product-amount">
 									<option>1</option>
@@ -84,6 +72,8 @@ $image_elements = array_reduce($images,function($r,$o){
 								</select>
 							</div>
 						</div>
+
+
 					</div>
 
 					<div class="card-section">
@@ -91,24 +81,34 @@ $image_elements = array_reduce($images,function($r,$o){
 						<input type="submit" class="form-button" value="Add to Cart">	
 						</div>
 					</div>
+
+
+					<div class="card-section">
+						<h3>Product Specifications</h3>
+						<p><strong>Tea Type: </strong><?= $product->category?></p>
+						<p><strong>Origin: </strong><?= $product->origin?></p>
+						<p><strong>Flavors: </strong> <?= $product->flavors?></p>
+						<p><strong>Steep Time: </strong> <?= $product->steep_time?></p>
+					</div>
+
 				</form>
 			</div>
 		</div>
 
-		<div class="card soft dark">
-			<p><?= $product->description?></p>
+		
+<br>
+<br>
 
-		</div>
+</div>
 
+
+	<div class="container">
 		<h2>Recommended Products</h2>
 		<?php
 			recommendedSimilar($product->category,$product->id);
-
 		?>
-
 	</div>
 
-<br>
 
 	<div>
 	<?php include "parts/newsletter.php"; ?>

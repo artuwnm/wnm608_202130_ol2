@@ -13,12 +13,6 @@ function productListTemplate($r,$o){
 					<div class="flex-grow">
 							<div class="form-control display-flex">
 								<button type="button"class="small-form-button">Add to Cart</button>
-
-								<div class="favorite display-flex">
-									<input type="checkbox" id="heart-example" class="hidden">
-								<label for="heart-example">&hearts;</label>
-
-								</div>
 							</div>
 
 						</div>
@@ -35,7 +29,6 @@ function productListHomepage($r,$o){
 			<div class="flex-stretch"><img src="img/$o->thumbnail" alt=""> </div>
 			<figcaption class="flex-none">
 					<div class="productname">$o->name</div>
-					<div class="description">$o->description</div>
 					<div class="flex-grow">
 							<div class="form-control display-flex">
 								<button type="button"class="small-form-button">Learn More</button>
@@ -111,9 +104,6 @@ return <<<HTML
 	<div class="card-section display-flex">
 		<div class="flex-stretch"><strong>Total</strong></div>
 		<div class="flex-none">&dollar;$taxedfixed</div>
-	</div>
-	<div class="card-section">
-		<a href="product_checkout.php" class="form-button">Checkout</a>
 	</div>
 HTML; 
 }

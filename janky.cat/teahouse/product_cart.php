@@ -20,6 +20,8 @@ $cart_items = getCartItems();
 
 	<?php include "parts/navbar.php"; ?>
 
+	<br>
+
 <div class="container">
 		<h2>In Your Cart</h2>
 
@@ -38,6 +40,9 @@ $cart_items = getCartItems();
 			<div class="col-xs-12 col-md-5">
 				<div class="card soft flat">
 					<?= cartTotals() ?>
+				<div class="card-section">
+					<a href="product_checkout.php" class="form-button">Checkout</a>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -47,15 +52,17 @@ $cart_items = getCartItems();
 		<div class="card soft">
 			<p>Your Cart is Empty</p>
 		</div>
+
+<br>		
+	
+<h3>Top Recommendations</h3>
+<?php recommendedAnything(6); ?>
 		
-			<h3>Top Recommendations</h3>
-			<?php recommendedAnything(6); ?>
-		
-		<?php
+<?php
 
 	}
 	?>
-	</div>
+</div>
 
 <br>
 

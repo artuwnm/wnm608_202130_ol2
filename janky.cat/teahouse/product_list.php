@@ -32,13 +32,13 @@ include_once "parts/templates.php";
 			<div class="col-xs-12 col-md-1"></div>
 
 			<div class="col-xs-12 col-md-3">
-				<h3>Back in Stock: Jasmine White Tea</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<h3>Jasmine White Tea</h3>
+				<p> A blend of silver needles and jasmine blossoms. This tea has a touch of sweetness.</p>
 			</div>
 		</div>		
 	</div>
 
-<br>
+<br></br>
 
 	<div class="container">
 			<h2>Product List</h2>

@@ -37,7 +37,7 @@
 					<h4>CONNECT WITH US</h4>
 					<div class="connect">
 					<img src="img/facebook.png">
-					<img src="img/insta.png">
+					<img src="img/instagram.png">
 					<img src="img/twitter.png">
 					</div>
 			</div>

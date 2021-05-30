@@ -51,6 +51,11 @@ $cart_items = getCartItems();
 					<label for="last-name" class="form-label">Last Name</label>
 					<input type="text" placeholder="Last Name" class="form-input">
 				</div>
+
+				<div class="form-control">
+					<label for="email" class="form-label">Email Address</label>
+					<input type="text" placeholder="Email Address" class="form-input">
+				</div>
 			</form>	
 
 			<form>
@@ -112,8 +117,10 @@ $cart_items = getCartItems();
 					</div>
 					</div>
 			</form>	
+
+<br>
 				
-			<div class="form-control">
+			<div class="form-control display-flex" style="justify-content: center;">
 			<a href="product_confirmation.php"><button type="button"class="large-form-button">Place Order</button></a>
 		</div>
 	</form>

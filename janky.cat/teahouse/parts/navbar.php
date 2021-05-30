@@ -19,11 +19,10 @@ include_once "lib/php/functions.php";
 			<nav class="nav nav-flex flex-none nav">
 				<ul>
 					<li> <a href="product_list.php">Shop Teas</a></li>
-					<li> <a href="learn.php">Learn</a></li>
 					<li> <a href="about.php">About</a></li>
 					<li class="cart nav display-flex flex-align-center flex-justify-center"><a href="product_cart.php"> 
-					<span><img src="img/cart.png"></span>
-					<span class="badge"><?= makeCartBadge(); ?></span>
+						<span><img src="img/cart.png"></span>
+						<span class="badge"><?= makeCartBadge(); ?></span>
 					</a></li>
 				</ul>
 			</nav>

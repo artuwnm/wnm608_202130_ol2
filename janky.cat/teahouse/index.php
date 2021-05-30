@@ -15,13 +15,13 @@ include_once "parts/templates.php";
 <body>
 	<?php include "parts/navbar.php"; ?>
 
-	<div class="view-window" style="background-image: url('img/herosmall.jpg")> 
+	<div class="view-window" style="background-image: url('img/hero.png")> 
 		
 		<div class="container calltoaction">
 			<div> 
 				<h1>Our spring collection has arrived.</h1> 
 					<div class="form-control">
-					 	<a href="product_list.php"><button type="button"class="small-form-button-round">Shop Now</button></a>
+					 	<a href="product_list.php"><button type="button"class="small-form-button">Shop Now</button></a>
 					</div>
 			</div>
 		</div>
@@ -31,7 +31,7 @@ include_once "parts/templates.php";
 		<div class="container grid gap">
 			<div class="col-xs-12 col-md-6">
 			<figure class="figure product-overlay">
-				<img src="img/gifts.png" alt=""> 
+				<img src="img/black_teas.png" alt=""> 
 					<figcaption>
 						<div class="caption-body">
 							<h4>Black Teas</h4>
@@ -42,10 +42,10 @@ include_once "parts/templates.php";
 
 			<div class="col-xs-12 col-md-6">
 			<figure class="figure product-overlay">
-				<img src="img/education.png" alt=""> 
+				<img src="img/herbal_teas.png" alt=""> 
 					<figcaption>
 						<div class="caption-body">
-							<h4>White Teas</h4>
+							<h4>Herbal Teas</h4>
 						</div>
 					</figcaption>
 			</figure>
@@ -56,15 +56,15 @@ include_once "parts/templates.php";
 	<div class="card medium">
 		<div class="container grid gap">
 			<div class="col-xs-12 col-md-3">
-				<h3>Heading</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<h3>Iced Teas</h3>
+				<p> Our collection of iced teas will start your summer off right.</p>
 			</div>
 
 			<div class="col-xs-12 col-md-1"></div>
 
 			<div class="col-xs-12 col-md-8">
 				<figure class="figure basic">
-					<img src="img/tea.png" alt=""> 
+					<img src="img/iced_tea.png" alt=""> 
 				</figure>
 			</div>
 
@@ -75,7 +75,7 @@ include_once "parts/templates.php";
 	<br>
 
 	<div class="container">
-		<h3>Popular Teas</h3>
+		<h2>Popular Teas</h2>
 			<?php
 
 			$result = makeQuery(

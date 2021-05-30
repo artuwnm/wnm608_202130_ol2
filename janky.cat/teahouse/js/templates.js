@@ -1,5 +1,6 @@
 
 
+
 const listItemTemplate = templater(o=>`
 <a class="col-xs-12 col-md-4" href="product_item.php?id=${o.id}">
 		<figure class="figure product display-flex flex-column">
@@ -14,11 +15,6 @@ const listItemTemplate = templater(o=>`
 							<div class="form-control display-flex">
 								<button type="button"class="small-form-button">Add to Cart</button>
 
-								<div class="favorite display-flex">
-									<input type="checkbox" id="heart-example" class="hidden">
-								<label for="heart-example">&hearts;</label>
-
-								</div>
 							</div>
 
 						</div>
