@@ -1,0 +1,23 @@
+{
+	"products":[
+	{
+		"product_name":"prod name",
+		"product_description":"description",
+		"technical_specs":["specs"],
+		"price":0
+	},
+	{
+		"product_name":"prod name",
+		"product_description":"description",
+		"technical_specs":["specs"],
+		"price":0
+	},
+	{
+		"product_name":"prod name",
+		"product_description":"description",
+		"technical_specs":["specs"],
+		"price":0
+	}
+
+]
+}
